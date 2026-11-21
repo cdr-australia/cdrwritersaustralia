@@ -1,0 +1,51 @@
+{
+  "path": "/applications/accreditation/",
+  "title": "CDR for CPEng & RPEng Accreditation",
+  "description": "Support with the competency report needed for chartered engineer accreditation: CPEng with Engineers Australia and RPEng with APEA.",
+  "priority": "0.8",
+  "service": { "name": "CDR for Chartered Accreditation", "type": "CPEng and RPEng report support" },
+  "breadcrumbs": [
+    { "name": "Home", "path": "/" },
+    { "name": "Applications", "path": "/applications/" },
+    { "name": "Accreditation", "path": "/applications/accreditation/" }
+  ],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": {
+        "icon": "🏅",
+        "h1": "CDR for Accreditation",
+        "sub": "Chartered status for independent engineering practice."
+      }
+    },
+    {
+      "id": "bodies", "type": "icon-grid", "order": 2,
+      "data": {
+        "heading": "Accreditation Bodies",
+        "items": [
+          { "icon": "🏛️", "title": "CPEng", "text": "Chartered Professional Engineer, awarded by Engineers Australia." },
+          { "icon": "🎖️", "title": "RPEng", "text": "Registered Professional Engineer, credentialed by APEA." }
+        ]
+      }
+    },
+    {
+      "id": "why", "type": "content-block", "order": 3, "data": {
+        "alt": true,
+        "icon": "💼",
+        "heading": "Why It Matters",
+        "paragraphs": ["Chartered status shows that your competence has been independently assessed. It supports independent practice and professional recognition."],
+        "bullets": ["Evidence of your own engineering work", "Competency mapping to the standard", "Clear, well-structured writing"]
+      }
+    },
+    {
+      "id": "faq", "type": "faq", "order": 4,
+      "data": {
+        "heading": "Accreditation Questions",
+        "items": [
+          { "q": "Is the report for chartered status the same as a migration CDR?", "a": "The format and purpose can differ by authority and pathway. We prepare the report for the specific assessment you are applying for." }
+        ]
+      }
+    },
+    { "id": "cta", "type": "cta-banner", "order": 5, "source": "shared/cta.json" }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "path": "/404.html",
+  "title": "Page Not Found | CDR Writers Australia",
+  "description": "The page you are looking for does not exist.",
+  "indexable": false,
+  "noindex": true,
+  "breadcrumbs": [{ "name": "Home", "path": "/" }, { "name": "Page not found", "path": "/404.html" }],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": {
+        "icon": "🧭",
+        "h1": "Page Not Found",
+        "sub": "That page has moved or never existed."
+      }
+    },
+    {
+      "id": "back", "type": "cta-banner", "order": 2,
+      "data": {
+        "heading": "Let's get you back on track",
+        "primary": { "label": "Go Home", "href": "/", "icon": "🏠" },
+        "secondary": { "label": "Our Services", "href": "/services/", "icon": "🛠️" }
+      }
+    }
+  ]
+}

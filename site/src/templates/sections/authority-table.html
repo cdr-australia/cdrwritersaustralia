@@ -1,0 +1,25 @@
+<section class="section section--alt" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container">
+    <header class="section__head">
+      <h2 class="section__title" id="{{id}}-title">{{heading}}</h2>
+      {{#subheading}}<p class="section__sub">{{subheading}}</p>{{/subheading}}
+    </header>
+    <div class="table-wrap">
+      <table class="table">
+        <caption class="sr-only">{{heading}}</caption>
+        <thead>
+          <tr><th scope="col">Service</th><th scope="col">Authority</th><th scope="col">Country</th></tr>
+        </thead>
+        <tbody>
+          {{#rows}}
+          <tr>
+            <th scope="row" data-label="Service">{{service}}</th>
+            <td data-label="Authority"><abbr title="{{full}}">{{authority}}</abbr><span class="table__full">{{full}}</span></td>
+            <td data-label="Country">{{flag}} {{country}}</td>
+          </tr>
+          {{/rows}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

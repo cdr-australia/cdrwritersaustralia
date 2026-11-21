@@ -1,0 +1,48 @@
+{
+  "heading": "What We Do",
+  "subheading": "Three core services, three ways to use them.",
+  "items": [
+    {
+      "icon": "✍️",
+      "title": "CDR Writing",
+      "text": "A fresh CDR built from your own projects.",
+      "href": "/services/cdr-writing/",
+      "tag": "Core"
+    },
+    {
+      "icon": "🔍",
+      "title": "CDR Review",
+      "text": "Expert check of your self-written CDR.",
+      "href": "/services/cdr-review/",
+      "tag": "Core"
+    },
+    {
+      "icon": "🛠️",
+      "title": "CDR Optimization",
+      "text": "Fix errors, edit and strengthen your report.",
+      "href": "/services/cdr-optimization/",
+      "tag": "Core"
+    },
+    {
+      "icon": "🛂",
+      "title": "Migration",
+      "text": "Engineers Australia skills assessment for visas and PR.",
+      "href": "/applications/migration/",
+      "tag": "Use"
+    },
+    {
+      "icon": "🏅",
+      "title": "Accreditation",
+      "text": "Chartered status: CPEng and RPEng.",
+      "href": "/applications/accreditation/",
+      "tag": "Use"
+    },
+    {
+      "icon": "📋",
+      "title": "Registration",
+      "text": "National and state engineering registers: NER and RPEQ.",
+      "href": "/applications/registration/",
+      "tag": "Use"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "path": "/guides/cdr-structure/",
+  "title": "CDR Structure: Career Episodes, CPD, Summary",
+  "description": "Understand the three parts of a CDR, the career episodes, the CPD list and the summary statement, and how they fit together.",
+  "priority": "0.8",
+  "article": { "headline": "CDR Structure Explained", "published": "2026-11-20" },
+  "breadcrumbs": [
+    { "name": "Home", "path": "/" },
+    { "name": "Guides", "path": "/guides/" },
+    { "name": "CDR Structure", "path": "/guides/cdr-structure/" }
+  ],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": { "icon": "🧩", "h1": "CDR Structure Explained", "sub": "Three parts, one connected story of your engineering work." }
+    },
+    {
+      "id": "body", "type": "rich-text", "order": 2,
+      "data": {
+        "updated": "20 November 2026",
+        "updatedISO": "2026-11-20",
+        "readTime": "5 min read",
+        "intro": "A CDR is easier to write once you see how its three parts support each other.",
+        "toc": true,
+        "sections": [
+          {
+            "anchor": "cpd", "icon": "🗂️", "heading": "1. CPD List",
+            "paragraphs": [
+              "The CPD list records how you have kept your engineering knowledge current: courses, training, seminars, self-study and similar activities."
+            ],
+            "bullets": ["Give dates, titles and a short description", "Include only activities you can evidence", "Keep entries relevant to your engineering field"]
+          },
+          {
+            "anchor": "episodes", "icon": "📄", "heading": "2. Career Episodes",
+            "paragraphs": [
+              "You write three career episodes. Each one covers a project or period of work and explains the engineering problem, your own role and the result.",
+              "Write in the first person. Say what you did, not what the team did."
+            ],
+            "bullets": ["Introduction and background", "Personal engineering activity", "Summary of outcomes"],
+            "note": "Check the current Engineers Australia booklet for length and formatting rules before you finish."
+          },
+          {
+            "anchor": "summary", "icon": "🧾", "heading": "3. Summary Statement",
+            "paragraphs": [
+              "The summary statement is a table that points to the exact paragraphs in your episodes that show each competency element. It helps the assessor find your evidence quickly."
+            ]
+          },
+          {
+            "anchor": "fit", "icon": "🔗", "heading": "How the Parts Fit",
+            "paragraphs": [
+              "Your episodes provide the evidence, your CPD list shows ongoing learning, and the summary statement connects the evidence to the standard. A gap in one part weakens the others."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "faq", "type": "faq", "order": 3,
+      "data": {
+        "heading": "Quick Answers",
+        "items": [
+          { "q": "Should all three career episodes cover the same project?", "a": "No. Each episode should describe a different project or period so that together they show a broad range of your engineering work." },
+          { "q": "Why must career episodes be in the first person?", "a": "The assessor needs to see your personal contribution. Writing in the first person makes your own role clear and separates it from the team's work." }
+        ]
+      }
+    },
+    {
+      "id": "next", "type": "cta-banner", "order": 4,
+      "data": {
+        "heading": "Want an expert to check yours?",
+        "text": "Get clear feedback on structure, depth and competency coverage.",
+        "primary": { "label": "See CDR Review", "href": "/services/cdr-review/", "icon": "🔍" },
+        "secondary": { "label": "WhatsApp Us", "href": "https://wa.me/61291917405", "icon": "💬" }
+      }
+    },
+    { "id": "more", "type": "guide-list", "order": 5, "source": "shared/guides.json", "excludeSelf": true, "data": { "alt": true, "heading": "More Guides", "subheading": "" } }
+  ]
+}

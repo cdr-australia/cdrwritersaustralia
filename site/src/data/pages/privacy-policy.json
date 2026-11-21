@@ -1,0 +1,83 @@
+{
+  "path": "/privacy-policy/",
+  "title": "Privacy Policy | CDR Writers Australia",
+  "description": "How CDR Writers Australia collects, uses, shares and protects personal information, and how to access or correct it.",
+  "priority": "0.3",
+  "breadcrumbs": [{ "name": "Home", "path": "/" }, { "name": "Privacy Policy", "path": "/privacy-policy/" }],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": {
+        "icon": "🔒",
+        "h1": "Privacy Policy",
+        "sub": "What we collect, why, and the choices you have."
+      }
+    },
+    {
+      "id": "policy", "type": "rich-text", "order": 2,
+      "data": {
+        "updated": "20 November 2026",
+        "updatedISO": "2026-11-20",
+        "intro": "This policy explains how CDR Writers Australia, a wing of CDR Australia, handles personal information collected through this website and our enquiry channels.",
+        "toc": true,
+        "sections": [
+          {
+            "anchor": "collect", "icon": "📥", "heading": "Information We Collect",
+            "paragraphs": ["We collect only what we need to respond to you and deliver our services."],
+            "bullets": [
+              "Contact details you send us, such as name, email address and phone number",
+              "Career and qualification details you share so we can prepare, review or improve a CDR",
+              "Messages sent by WhatsApp, email or phone",
+              "Basic technical data in server logs, such as browser type, device and pages visited"
+            ]
+          },
+          {
+            "anchor": "use", "icon": "🎯", "heading": "How We Use It",
+            "bullets": [
+              "Reply to enquiries and provide quotes",
+              "Prepare, review or optimize your CDR",
+              "Keep the website secure and working well",
+              "Meet our legal obligations"
+            ]
+          },
+          {
+            "anchor": "sharing", "icon": "🌏", "heading": "Sharing and Overseas Access",
+            "paragraphs": [
+              "We may share information with our sister companies and service providers who help us deliver a service. We do not sell personal information.",
+              "We have offices in Australia, Canada, New Zealand and India, so information may be accessed in those countries. We take reasonable steps to make sure it is handled in line with the Australian Privacy Principles."
+            ]
+          },
+          {
+            "anchor": "cookies", "icon": "🍪", "heading": "Cookies and Third Parties",
+            "paragraphs": [
+              "This website does not currently set cookies of its own. If we add analytics or similar tools, we will update this policy.",
+              "Links to WhatsApp and social media take you to third-party services that have their own privacy policies."
+            ]
+          },
+          {
+            "anchor": "security", "icon": "🛡️", "heading": "Security and Retention",
+            "paragraphs": [
+              "We take reasonable steps to protect personal information from loss, misuse and unauthorised access. We keep it only as long as needed for the purpose it was collected, or as the law requires."
+            ]
+          },
+          {
+            "anchor": "rights", "icon": "✋", "heading": "Access and Correction",
+            "paragraphs": ["You can ask to see the personal information we hold about you, or to correct it. Use the details on our Contact page."]
+          },
+          {
+            "anchor": "complaints", "icon": "📣", "heading": "Complaints",
+            "paragraphs": [
+              "If you have a privacy concern, contact us first and we will respond promptly. If you are not satisfied, you may contact the Office of the Australian Information Commissioner (OAIC)."
+            ]
+          },
+          {
+            "anchor": "changes", "icon": "🔄", "heading": "Changes and Contact",
+            "paragraphs": [
+              "We may update this policy from time to time. The date above shows the latest version. For any question, use the details on our Contact page."
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

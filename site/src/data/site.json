@@ -1,0 +1,40 @@
+{
+  "name": "CDR Writers Australia",
+  "altName": "CDRWritersAustralia",
+  "shortName": "CDR Writers",
+  "url": "https://cdrwritersaustralia.org",
+  "tagline": "Competency Demonstration Report (CDR) writing, review and optimization for engineers in Australia.",
+  "poweredBy": { "name": "CDR Australia", "url": "https://cdraustralia.org" },
+  "themeColor": "#0b2a4a",
+  "logo": "/assets/icons/icon-512.png",
+  "ogImage": "/assets/icons/og-image.png",
+  "email": "Contact@CDRAustralia.Org",
+  "phone": "+61291917405",
+  "whatsapp": {
+    "label": "Chat Now",
+    "number": "61291917405",
+    "url": "https://wa.me/61291917405"
+  },
+  "address": {
+    "street": "120 Arthur St",
+    "locality": "North Sydney",
+    "region": "NSW",
+    "postcode": "2060",
+    "country": "AU"
+  },
+  "offices": [
+    { "flag": "🇦🇺", "country": "Australia", "phone": "+61291917405", "head": true },
+    { "flag": "🇨🇦", "country": "Canada", "phone": "+16476009575" },
+    { "flag": "🇳🇿", "country": "New Zealand", "phone": "+6498879053" },
+    { "flag": "🇮🇳", "country": "India", "phone": "+919650572343" }
+  ],
+  "socials": [
+    { "name": "Facebook", "icon": "facebook", "url": "https://www.facebook.com/cwa" },
+    { "name": "Instagram", "icon": "instagram", "url": "https://www.instagram.com/cwa/" },
+    { "name": "X", "icon": "x", "url": "https://twitter.com/cwa" },
+    { "name": "YouTube", "icon": "youtube", "url": "https://www.youtube.com/channel/cwa" },
+    { "name": "LinkedIn", "icon": "linkedin", "url": "https://au.linkedin.com/company/cwa/" },
+    { "name": "TikTok", "icon": "tiktok", "url": "https://www.tiktok.com/@cwa" }
+  ],
+  "disclaimer": "CDR Writers Australia is an independent writing and advisory service. We are not affiliated with Engineers Australia or any assessing authority. Every CDR is prepared from your own career details and must be reviewed, understood and submitted by you. Assessment outcomes cannot be guaranteed."
+}

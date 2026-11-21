@@ -1,0 +1,24 @@
+{
+  "path": "/applications/",
+  "title": "CDR for Migration, Accreditation & Registration",
+  "description": "See how a CDR supports Engineers Australia migration skills assessment, CPEng and RPEng accreditation and engineering register entry.",
+  "priority": "0.9",
+  "breadcrumbs": [{ "name": "Home", "path": "/" }, { "name": "Applications", "path": "/applications/" }],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": {
+        "icon": "📌",
+        "h1": "Where a CDR Is Used",
+        "sub": "One report, three paths: migration, accreditation and registration."
+      }
+    },
+    {
+      "id": "uses", "type": "services-grid", "order": 2,
+      "source": "shared/services.json",
+      "filter": { "tag": "Use" },
+      "data": { "heading": "Choose Your Goal", "subheading": "Each path has its own requirements and authority." }
+    },
+    { "id": "cta", "type": "cta-banner", "order": 3, "source": "shared/cta.json" }
+  ]
+}

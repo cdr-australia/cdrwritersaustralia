@@ -1,0 +1,16 @@
+{
+  "heading": "Global Assessment Support",
+  "subheading": "Delivered through our sister companies.",
+  "rows": [
+    { "service": "KA02 Assessment", "authority": "IPENZ", "full": "Institute of Professional Engineers New Zealand", "flag": "🇳🇿", "country": "New Zealand" },
+    { "service": "Skills Assessment Help", "authority": "IEPNG", "full": "Institution of Engineers Papua New Guinea", "flag": "🇵🇬", "country": "Papua New Guinea" },
+    { "service": "ECSA Skills Assessment Guide", "authority": "ECSA", "full": "Engineering Council of South Africa", "flag": "🇿🇦", "country": "South Africa" },
+    { "service": "ERB Competency Assessment Support", "authority": "ERB", "full": "Engineers Registration Board", "flag": "🇧🇼", "country": "Botswana" },
+    { "service": "RICS Qualification Evaluation", "authority": "RICS", "full": "Royal Institution of Chartered Surveyors", "flag": "🇬🇧", "country": "United Kingdom" },
+    { "service": "EGM CBA Writing Services", "authority": "EGM", "full": "Engineers Geoscientists Manitoba", "flag": "🇨🇦", "country": "Canada" },
+    { "service": "APEGS CBA Report Preparation", "authority": "APEGS", "full": "Association of Professional Engineers and Geoscientists of Saskatchewan", "flag": "🇨🇦", "country": "Canada" },
+    { "service": "APEGA CBA Documentation", "authority": "APEGA", "full": "Association of Professional Engineers and Geoscientists of Alberta", "flag": "🇨🇦", "country": "Canada" },
+    { "service": "EGBC CBA Support", "authority": "EGBC", "full": "Engineers and Geoscientists British Columbia", "flag": "🇨🇦", "country": "Canada" },
+    { "service": "PEO CBA Dossier Creation", "authority": "PEO", "full": "Professional Engineers Ontario", "flag": "🇨🇦", "country": "Canada" }
+  ]
+}

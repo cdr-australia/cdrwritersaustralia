@@ -1,0 +1,28 @@
+<section class="section" id="{{id}}">
+  <div class="container container--narrow">
+    {{#updated}}<p class="meta">🕒 Updated <time datetime="{{updatedISO}}">{{updated}}</time>{{#readTime}} · ⏱️ {{readTime}}{{/readTime}}</p>{{/updated}}
+    {{#intro}}<p class="lead">{{intro}}</p>{{/intro}}
+
+    {{#toc}}
+    <nav class="toc" aria-label="On this page">
+      <p class="toc__title">📑 On this page</p>
+      <ol>
+        {{#sections}}<li><a href="#{{anchor}}">{{heading}}</a></li>{{/sections}}
+      </ol>
+    </nav>
+    {{/toc}}
+
+    {{#sections}}
+    <article class="prose-sec" id="{{anchor}}">
+      <h2 class="prose-sec__title">{{#icon}}<span aria-hidden="true">{{icon}}</span> {{/icon}}{{heading}}</h2>
+      {{#paragraphs}}<p>{{.}}</p>{{/paragraphs}}
+      {{#has_bullets}}
+      <ul class="checklist">
+        {{#bullets}}<li>{{.}}</li>{{/bullets}}
+      </ul>
+      {{/has_bullets}}
+      {{#note}}<p class="callout"><span aria-hidden="true">💡</span> {{note}}</p>{{/note}}
+    </article>
+    {{/sections}}
+  </div>
+</section>

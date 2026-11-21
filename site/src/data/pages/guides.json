@@ -1,0 +1,19 @@
+{
+  "path": "/guides/",
+  "title": "CDR Guides for Engineers | CDR Writers Australia",
+  "description": "Plain-English guides to the CDR: what it is, how it is structured, occupation categories and the mistakes to avoid.",
+  "priority": "0.8",
+  "breadcrumbs": [{ "name": "Home", "path": "/" }, { "name": "Guides", "path": "/guides/" }],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": {
+        "icon": "📚",
+        "h1": "CDR Guides",
+        "sub": "Clear answers before you write, review or submit."
+      }
+    },
+    { "id": "list", "type": "guide-list", "order": 2, "source": "shared/guides.json" },
+    { "id": "cta", "type": "cta-banner", "order": 3, "source": "shared/cta.json" }
+  ]
+}

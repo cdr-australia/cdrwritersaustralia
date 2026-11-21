@@ -1,0 +1,59 @@
+{
+  "path": "/services/cdr-writing/",
+  "title": "CDR Writing Service Australia | CDR Writers Australia",
+  "description": "Get a fresh Competency Demonstration Report written from your own projects, with career episodes, CPD and summary statement.",
+  "priority": "0.9",
+  "service": { "name": "CDR Writing", "type": "CDR writing" },
+  "breadcrumbs": [
+    { "name": "Home", "path": "/" },
+    { "name": "Services", "path": "/services/" },
+    { "name": "CDR Writing", "path": "/services/cdr-writing/" }
+  ],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": {
+        "icon": "✍️",
+        "h1": "CDR Writing Service",
+        "sub": "A fresh Competency Demonstration Report built from your own career.",
+        "badges": [{ "icon": "📄", "text": "3 Career Episodes" }, { "icon": "🗂️", "text": "CPD List" }, { "icon": "🧾", "text": "Summary Statement" }]
+      }
+    },
+    {
+      "id": "what", "type": "content-block", "order": 2,
+      "data": {
+        "icon": "📦",
+        "heading": "What Your CDR Contains",
+        "paragraphs": [
+          "We prepare your report from your own projects, duties and achievements, in the Engineers Australia format.",
+          "You review every line and submit it yourself."
+        ],
+        "bullets": ["Continuing Professional Development (CPD) list", "Three career episodes", "Summary statement mapped to competency elements"]
+      }
+    },
+    {
+      "id": "steps", "type": "process-steps", "order": 3,
+      "data": {
+        "heading": "Writing Process",
+        "items": [
+          { "icon": "📝", "title": "Share your career", "text": "Résumé, projects and qualifications." },
+          { "icon": "🧭", "title": "Plan the episodes", "text": "Pick the three strongest projects." },
+          { "icon": "✍️", "title": "Draft and edit", "text": "Your story in clear first-person text." },
+          { "icon": "✅", "title": "Final check", "text": "Format, grammar and competency review." }
+        ]
+      }
+    },
+    {
+      "id": "faq", "type": "faq", "order": 4,
+      "data": {
+        "heading": "CDR Writing Questions",
+        "items": [
+          { "q": "How many career episodes does a CDR need?", "a": "A CDR contains three career episodes, each describing a different period or project from your engineering work." },
+          { "q": "Who needs a new CDR?", "a": "Engineers whose qualification is not assessed under the Washington, Sydney or Dublin Accords usually need one, as do engineers seeking chartered status or register entry where a competency report is required." },
+          { "q": "What do I need to provide?", "a": "Your résumé, project details, responsibilities and qualifications. We ask follow-up questions so the report reflects your real work." }
+        ]
+      }
+    },
+    { "id": "cta", "type": "cta-banner", "order": 5, "source": "shared/cta.json" }
+  ]
+}

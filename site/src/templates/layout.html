@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{page.title}}</title>
+  <meta name="description" content="{{page.description}}">
+  <link rel="canonical" href="{{canonical}}">
+  <meta name="robots" content="{{#page.noindex}}noindex, follow{{/page.noindex}}{{^page.noindex}}index, follow, max-image-preview:large{{/page.noindex}}">
+  <meta name="theme-color" content="{{site.themeColor}}">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="{{site.shortName}}">
+
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/assets/icons/icon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{site.name}}">
+  <meta property="og:title" content="{{page.title}}">
+  <meta property="og:description" content="{{page.description}}">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:image" content="{{ogImage}}">
+  <meta property="og:locale" content="en_AU">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="/assets/css/tokens.css?v={{buildId}}">
+  <link rel="stylesheet" href="/assets/css/base.css?v={{buildId}}">
+  <link rel="stylesheet" href="/assets/css/app-shell.css?v={{buildId}}">
+  <link rel="stylesheet" href="/assets/css/sections.css?v={{buildId}}">
+
+  <script type="application/ld+json">{{{jsonld}}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  {{> header}}
+  {{> drawer}}
+
+  <main id="main" tabindex="-1">
+{{{body}}}
+  </main>
+
+  {{> footer}}
+  {{> bottom-nav}}
+
+  <a class="fab" href="{{site.whatsapp.url}}" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+  <div class="snackbar" id="snackbar" role="status" aria-live="polite"></div>
+
+  <script src="/assets/js/nav.js?v={{buildId}}" defer></script>
+  <script src="/assets/js/sections/faq.js?v={{buildId}}" defer></script>
+  <script src="/assets/js/app.js?v={{buildId}}" defer></script>
+</body>
+</html>

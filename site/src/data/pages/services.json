@@ -1,0 +1,36 @@
+{
+  "path": "/services/",
+  "title": "CDR Services Australia | CDR Writers Australia",
+  "description": "Explore CDR writing, CDR review and CDR optimization services for engineers applying to Engineers Australia.",
+  "priority": "0.9",
+  "breadcrumbs": [{ "name": "Home", "path": "/" }, { "name": "Services", "path": "/services/" }],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": {
+        "icon": "🛠️",
+        "h1": "CDR Services",
+        "sub": "Pick the support that fits where your report stands today."
+      }
+    },
+    {
+      "id": "core", "type": "services-grid", "order": 2,
+      "source": "shared/services.json",
+      "filter": { "tag": "Core" },
+      "data": { "heading": "Choose Your Service", "subheading": "Start fresh, get a second opinion, or fix what you have." }
+    },
+    {
+      "id": "how", "type": "process-steps", "order": 3,
+      "data": {
+        "heading": "How It Works",
+        "items": [
+          { "icon": "🎯", "title": "Pick", "text": "Choose writing, review or optimization." },
+          { "icon": "📝", "title": "Share", "text": "Send your résumé, projects and any draft." },
+          { "icon": "✍️", "title": "Prepare", "text": "We write, check or improve your report." },
+          { "icon": "📤", "title": "Submit", "text": "You review it and lodge it yourself." }
+        ]
+      }
+    },
+    { "id": "cta", "type": "cta-banner", "order": 4, "source": "shared/cta.json" }
+  ]
+}

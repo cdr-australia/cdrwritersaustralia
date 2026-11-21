@@ -1,0 +1,43 @@
+{
+  "path": "/",
+  "title": "CDR Writers Australia | CDR Writing, Review & Optimization",
+  "description": "CDR Writers Australia helps engineers with CDR writing, review and optimization for Engineers Australia migration, accreditation and registration.",
+  "priority": "1.0",
+  "indexable": true,
+  "ogImage": "/assets/icons/og-image.png",
+  "breadcrumbs": [{ "name": "Home", "path": "/" }],
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "order": 1,
+      "enabled": true,
+      "data": {
+        "eyebrow": "A wing of CDR Australia",
+        "h1": "CDR Writers Australia",
+        "sub": "Competency Demonstration Report writing for engineers in Australia.",
+        "badges": [
+          { "icon": "✍️", "text": "Writing" },
+          { "icon": "🔍", "text": "Review" },
+          { "icon": "🛠️", "text": "Optimization" }
+        ],
+        "ctaPrimary": { "label": "Get a Free Quote", "href": "/contact/", "icon": "🚀" },
+        "ctaSecondary": { "label": "WhatsApp Us", "href": "https://wa.me/61291917405", "icon": "💬" }
+      }
+    },
+    {
+      "id": "services",
+      "type": "services-grid",
+      "order": 2,
+      "enabled": true,
+      "source": "shared/services.json"
+    },
+    {
+      "id": "faq",
+      "type": "faq",
+      "order": 3,
+      "enabled": true,
+      "source": "shared/faq.json"
+    }
+  ]
+}

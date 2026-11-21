@@ -1,0 +1,71 @@
+{
+  "path": "/guides/engineering-occupation-categories/",
+  "title": "Engineering Occupation Categories for CDR",
+  "description": "Professional Engineer, Engineering Technologist or Engineering Associate: understand the three categories and how to choose the right one.",
+  "priority": "0.8",
+  "article": { "headline": "Engineering Occupation Categories", "published": "2026-11-20" },
+  "breadcrumbs": [
+    { "name": "Home", "path": "/" },
+    { "name": "Guides", "path": "/guides/" },
+    { "name": "Occupation Categories", "path": "/guides/engineering-occupation-categories/" }
+  ],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": { "icon": "🧑‍🔧", "h1": "Engineering Occupation Categories", "sub": "Your category decides the standard your CDR is judged against." }
+    },
+    {
+      "id": "cats", "type": "icon-grid", "order": 2,
+      "data": {
+        "heading": "The Three Categories",
+        "items": [
+          { "icon": "🎓", "title": "Professional Engineer", "text": "Typically a four-year engineering degree and broad design responsibility." },
+          { "icon": "🔩", "title": "Engineering Technologist", "text": "Typically a three-year degree with applied, specialised work." },
+          { "icon": "🛠️", "title": "Engineering Associate", "text": "Typically a two-year qualification with practical, supervised work." }
+        ]
+      }
+    },
+    {
+      "id": "body", "type": "rich-text", "order": 3,
+      "data": {
+        "toc": true,
+        "sections": [
+          {
+            "anchor": "choose", "icon": "🧭", "heading": "How to Choose",
+            "paragraphs": [
+              "Look at your qualification first, then at the level of responsibility in your real work. The category must fit both."
+            ],
+            "bullets": ["Length and level of your qualification", "Whether you led design or worked under direction", "The nominated occupation in your application"]
+          },
+          {
+            "anchor": "why", "icon": "⚖️", "heading": "Why It Matters",
+            "paragraphs": [
+              "Each category has its own competency standard. A report written for the wrong category can fail to show the right evidence, even when the engineering work itself is strong."
+            ],
+            "note": "Category rules and qualification expectations can change. Confirm them with Engineers Australia before you commit."
+          }
+        ]
+      }
+    },
+    {
+      "id": "faq", "type": "faq", "order": 4,
+      "data": {
+        "heading": "Quick Answers",
+        "items": [
+          { "q": "Can I be assessed in a higher category than my degree suggests?", "a": "It is possible only if your qualification and your demonstrated work support it. The assessor judges the evidence, so the claim has to be credible." },
+          { "q": "Does my category change the CDR format?", "a": "The parts of the report stay the same, but the competency standard you map to is different for each category." }
+        ]
+      }
+    },
+    {
+      "id": "next", "type": "cta-banner", "order": 5,
+      "data": {
+        "heading": "Not sure which category fits?",
+        "text": "Tell us your qualification and role and we will point you in the right direction.",
+        "primary": { "label": "Ask Us", "href": "/contact/", "icon": "✉️" },
+        "secondary": { "label": "WhatsApp Us", "href": "https://wa.me/61291917405", "icon": "💬" }
+      }
+    },
+    { "id": "more", "type": "guide-list", "order": 6, "source": "shared/guides.json", "excludeSelf": true, "data": { "alt": true, "heading": "More Guides", "subheading": "" } }
+  ]
+}

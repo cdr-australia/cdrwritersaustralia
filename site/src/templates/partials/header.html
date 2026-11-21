@@ -1,0 +1,18 @@
+<header class="app-bar">
+  <div class="app-bar__inner">
+    <button class="icon-btn app-bar__menu" type="button" aria-label="Open menu" aria-controls="drawer" aria-expanded="false" data-drawer-open>☰</button>
+
+    <a class="brand" href="/" aria-label="{{site.name}} home">
+      <span class="brand__mark" aria-hidden="true">📐</span>
+      <span class="brand__name">{{site.name}}</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Primary">
+      {{#nav.header}}
+      <a href="{{href}}">{{label}}</a>
+      {{/nav.header}}
+    </nav>
+
+    <a class="btn btn--accent app-bar__cta" href="{{nav.cta.href}}">{{nav.cta.label}}</a>
+  </div>
+</header>

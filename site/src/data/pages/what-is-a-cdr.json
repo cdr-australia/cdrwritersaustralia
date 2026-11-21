@@ -1,0 +1,84 @@
+{
+  "path": "/guides/what-is-a-cdr/",
+  "title": "What Is a CDR? Guide for Engineers Australia",
+  "description": "Learn what a Competency Demonstration Report is, who needs one, what it contains and how it is used for migration, accreditation and registration.",
+  "priority": "0.8",
+  "article": { "headline": "What Is a CDR?", "published": "2026-11-20" },
+  "breadcrumbs": [
+    { "name": "Home", "path": "/" },
+    { "name": "Guides", "path": "/guides/" },
+    { "name": "What Is a CDR?", "path": "/guides/what-is-a-cdr/" }
+  ],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": { "icon": "📘", "h1": "What Is a CDR?", "sub": "The report Engineers Australia uses to assess your engineering competence." }
+    },
+    {
+      "id": "body", "type": "rich-text", "order": 2,
+      "data": {
+        "updated": "20 November 2026",
+        "updatedISO": "2026-11-20",
+        "readTime": "4 min read",
+        "intro": "A Competency Demonstration Report (CDR) is a portfolio in which you show, in your own words, that your engineering skills meet the Australian standard.",
+        "toc": true,
+        "sections": [
+          {
+            "anchor": "meaning", "icon": "📖", "heading": "The Short Answer",
+            "paragraphs": [
+              "Engineers Australia assesses engineers who do not hold a qualification covered by an international accord. Instead of judging the degree alone, it reads a CDR to judge what you can actually do as an engineer."
+            ]
+          },
+          {
+            "anchor": "who", "icon": "🙋", "heading": "Who Needs One",
+            "bullets": [
+              "Engineers with an overseas qualification outside the accords applying for a migration skills assessment",
+              "Engineers seeking chartered status or entry to an engineering register that asks for a competency report"
+            ],
+            "note": "Requirements change by pathway. Always check the current Engineers Australia booklet for your own case."
+          },
+          {
+            "anchor": "parts", "icon": "🧩", "heading": "What It Contains",
+            "bullets": [
+              "A Continuing Professional Development (CPD) list",
+              "Three career episodes describing your engineering work",
+              "A summary statement that links your episodes to the competency elements"
+            ]
+          },
+          {
+            "anchor": "uses", "icon": "📌", "heading": "Where It Is Used",
+            "paragraphs": [
+              "The same type of report supports migration skills assessment, accreditation such as CPEng and RPEng, and registration on engineering registers. Each authority has its own rules, so the report is prepared for the specific assessment."
+            ]
+          },
+          {
+            "anchor": "own", "icon": "✍️", "heading": "It Must Be Your Own Work",
+            "paragraphs": [
+              "Assessors expect a report that reflects your real projects and your personal role. Copied or generic text is a common reason for a poor outcome, so every claim should be something you can explain in an interview."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "faq", "type": "faq", "order": 3,
+      "data": {
+        "heading": "Quick Answers",
+        "items": [
+          { "q": "Is a CDR the same as a résumé?", "a": "No. A résumé lists your jobs. A CDR explains, in detail and in the first person, what you personally did on specific engineering projects." },
+          { "q": "How long does it take to prepare a CDR?", "a": "It depends on how much material you already have. Gathering project details and writing three careful episodes usually takes longer than people expect, so start early." }
+        ]
+      }
+    },
+    {
+      "id": "next", "type": "cta-banner", "order": 4,
+      "data": {
+        "heading": "Need a CDR written?",
+        "text": "Get a fresh report built from your own projects.",
+        "primary": { "label": "See CDR Writing", "href": "/services/cdr-writing/", "icon": "✍️" },
+        "secondary": { "label": "WhatsApp Us", "href": "https://wa.me/61291917405", "icon": "💬" }
+      }
+    },
+    { "id": "more", "type": "guide-list", "order": 5, "source": "shared/guides.json", "excludeSelf": true, "data": { "alt": true, "heading": "More Guides", "subheading": "" } }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "CDR Writers Australia",
+  "short_name": "CDRWritersAustralia",
+  "description": "CDR writing, review and optimization for engineers in Australia.",
+  "id": "/",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#0b2a4a",
+  "lang": "en-AU",
+  "categories": ["business", "education"],
+  "icons": [
+    { "src": "/assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+    "screenshots": [
+    {
+      "src": "/assets/screenshots/home-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "CDR Writers Australia on desktop"
+    },
+    {
+      "src": "/assets/screenshots/home-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "CDR Writers Australia on mobile"
+    }
+  ],
+  "shortcuts": [
+    { "name": "Services", "url": "/services/", "icons": [{ "src": "/assets/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Contact", "url": "/contact/", "icons": [{ "src": "/assets/icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

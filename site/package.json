@@ -1,0 +1,14 @@
+{
+  "name": "cdrwa",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CDR Writers Australia - static, JSON-driven site",
+  "scripts": {
+    "build": "node build.js",
+    "serve": "npx serve dist -l 4000",
+    "dev": "node build.js && npx serve dist -l 4000"
+  },
+  "dependencies": {
+    "mustache": "^4.2.0"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "path": "/guides/common-cdr-mistakes/",
+  "title": "Common CDR Mistakes and How to Avoid Them",
+  "description": "The most common errors that weaken a CDR, from copied text and vague roles to missing competency mapping, with simple fixes.",
+  "priority": "0.8",
+  "article": { "headline": "Common CDR Mistakes", "published": "2026-11-20" },
+  "breadcrumbs": [
+    { "name": "Home", "path": "/" },
+    { "name": "Guides", "path": "/guides/" },
+    { "name": "Common CDR Mistakes", "path": "/guides/common-cdr-mistakes/" }
+  ],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": { "icon": "⚠️", "h1": "Common CDR Mistakes", "sub": "Small errors that quietly weaken a strong engineering record." }
+    },
+    {
+      "id": "body", "type": "rich-text", "order": 2,
+      "data": {
+        "updated": "20 November 2026",
+        "updatedISO": "2026-11-20",
+        "readTime": "5 min read",
+        "intro": "Most weak CDRs have strong engineers behind them. The problem is how the work is presented.",
+        "toc": true,
+        "sections": [
+          {
+            "anchor": "copied", "icon": "📋", "heading": "Copied or Generic Text",
+            "paragraphs": ["Text taken from templates, other reports or the internet is easy to spot and can seriously harm an assessment."],
+            "note": "Fix: write from your own projects and keep the wording personal."
+          },
+          {
+            "anchor": "we", "icon": "👥", "heading": "Describing the Team, Not You",
+            "paragraphs": ["Using \"we\" hides your contribution. The assessor wants to know what you personally designed, calculated, tested or decided."],
+            "note": "Fix: write in the first person and name your own tasks."
+          },
+          {
+            "anchor": "vague", "icon": "🌫️", "heading": "Vague Technical Detail",
+            "paragraphs": ["Statements such as \"I worked on the design\" prove little. Specific methods, standards, tools and results show real competence."],
+            "note": "Fix: state what you did, how, with which tools and what the outcome was."
+          },
+          {
+            "anchor": "theory", "icon": "📚", "heading": "Too Much Textbook Theory",
+            "paragraphs": ["Long explanations of general theory take space from your own engineering activity."],
+            "note": "Fix: keep theory short and spend the words on your decisions and actions."
+          },
+          {
+            "anchor": "mapping", "icon": "🔗", "heading": "Weak Competency Mapping",
+            "paragraphs": ["If the summary statement points to paragraphs that do not really show the element, the assessor cannot find your evidence."],
+            "note": "Fix: check every reference against the paragraph it points to."
+          },
+          {
+            "anchor": "details", "icon": "🔎", "heading": "Inconsistent Details",
+            "paragraphs": ["Dates, job titles and project names that differ between your résumé, episodes and CPD list raise doubts."],
+            "note": "Fix: build one fact sheet first and reuse it everywhere."
+          }
+        ]
+      }
+    },
+    {
+      "id": "faq", "type": "faq", "order": 3,
+      "data": {
+        "heading": "Quick Answers",
+        "items": [
+          { "q": "Can I fix a CDR that was already returned?", "a": "Yes. Read the assessor's comments carefully, address each point with real evidence and keep your facts consistent across all parts." },
+          { "q": "Is it safe to reuse a friend's CDR as a model?", "a": "Use it only to understand the structure. Copying content is risky, and your report must describe your own work." }
+        ]
+      }
+    },
+    {
+      "id": "next", "type": "cta-banner", "order": 4,
+      "data": {
+        "heading": "Spotted a few of these in your CDR?",
+        "text": "We can fix errors and strengthen your report while keeping your real experience.",
+        "primary": { "label": "See CDR Optimization", "href": "/services/cdr-optimization/", "icon": "🛠️" },
+        "secondary": { "label": "WhatsApp Us", "href": "https://wa.me/61291917405", "icon": "💬" }
+      }
+    },
+    { "id": "more", "type": "guide-list", "order": 5, "source": "shared/guides.json", "excludeSelf": true, "data": { "alt": true, "heading": "More Guides", "subheading": "" } }
+  ]
+}

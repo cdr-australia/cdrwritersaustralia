@@ -1,0 +1,18 @@
+<section class="page-hero" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <ol>
+        {{#page.crumbs}}
+        <li>{{#last}}<span aria-current="page">{{name}}</span>{{/last}}{{^last}}<a href="{{path}}">{{name}}</a>{{/last}}</li>
+        {{/page.crumbs}}
+      </ol>
+    </nav>
+    <h1 class="page-hero__title" id="{{id}}-title">{{#icon}}<span aria-hidden="true">{{icon}}</span> {{/icon}}{{h1}}</h1>
+    <p class="page-hero__sub">{{sub}}</p>
+    {{#has_badges}}
+    <ul class="hero__badges">
+      {{#badges}}<li class="chip chip--glass"><span aria-hidden="true">{{icon}}</span> {{text}}</li>{{/badges}}
+    </ul>
+    {{/has_badges}}
+  </div>
+</section>

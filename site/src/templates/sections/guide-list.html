@@ -1,0 +1,21 @@
+<section class="section{{#alt}} section--alt{{/alt}}" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container">
+    <header class="section__head">
+      <h2 class="section__title" id="{{id}}-title">{{heading}}</h2>
+      {{#subheading}}<p class="section__sub">{{subheading}}</p>{{/subheading}}
+    </header>
+    <ul class="card-grid">
+      {{#items}}
+      <li>
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">{{icon}}</span>
+          {{#read}}<span class="chip chip--tag">⏱️ {{read}}</span>{{/read}}
+          <h3 class="card__title"><a href="{{href}}">{{title}}</a></h3>
+          <p class="card__text">{{text}}</p>
+          <a class="card__more" href="{{href}}" aria-label="Read the guide: {{title}}">Read guide →</a>
+        </article>
+      </li>
+      {{/items}}
+    </ul>
+  </div>
+</section>

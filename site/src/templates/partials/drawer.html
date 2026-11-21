@@ -1,0 +1,20 @@
+<div class="drawer-overlay" data-drawer-close hidden></div>
+<aside class="drawer" id="drawer" aria-label="Menu" aria-hidden="true">
+  <div class="drawer__head">
+    <span class="brand__mark" aria-hidden="true">📐</span>
+    <strong>{{site.name}}</strong>
+    <button class="icon-btn" type="button" aria-label="Close menu" data-drawer-close>✕</button>
+  </div>
+
+  <nav class="drawer__nav" aria-label="Mobile">
+    {{#nav.header}}
+    <a href="{{href}}"><span aria-hidden="true">{{icon}}</span> {{label}}</a>
+    {{/nav.header}}
+  </nav>
+
+  <div class="drawer__foot">
+    <a class="btn btn--accent btn--block" href="{{nav.cta.href}}">{{nav.cta.label}}</a>
+    <a class="drawer__contact" href="tel:{{site.phone}}">📞 {{site.phone}}</a>
+    <a class="drawer__contact" href="mailto:{{site.email}}">✉️ {{site.email}}</a>
+  </div>
+</aside>

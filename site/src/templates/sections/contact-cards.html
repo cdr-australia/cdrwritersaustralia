@@ -1,0 +1,39 @@
+<section class="section" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container">
+    <header class="section__head">
+      <h2 class="section__title" id="{{id}}-title">{{heading}}</h2>
+      {{#subheading}}<p class="section__sub">{{subheading}}</p>{{/subheading}}
+    </header>
+
+    <ul class="card-grid">
+      <li>
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">💬</span>
+          <h3 class="card__title">WhatsApp</h3>
+          <p class="card__text">Fastest way to reach us.</p>
+          <a class="btn btn--accent" href="{{site.whatsapp.url}}" rel="noopener">{{site.whatsapp.label}}</a>
+        </article>
+      </li>
+      <li>
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">✉️</span>
+          <h3 class="card__title">Email</h3>
+          <p class="card__text"><a href="mailto:{{site.email}}">{{site.email}}</a></p>
+        </article>
+      </li>
+      <li>
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">📍</span>
+          <h3 class="card__title">Head Office</h3>
+          <address class="card__text">{{site.address.street}}<br>{{site.address.locality}} {{site.address.region}} {{site.address.postcode}}</address>
+        </article>
+      </li>
+    </ul>
+
+    <ul class="offices">
+      {{#site.offices}}
+      <li class="chip chip--tag">{{flag}} {{country}}: <a href="tel:{{phone}}">{{phone}}</a></li>
+      {{/site.offices}}
+    </ul>
+  </div>
+</section>

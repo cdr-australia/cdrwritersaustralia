@@ -1,0 +1,53 @@
+/* Design tokens: change the look of the whole site here */
+:root {
+  /* colour */
+  --c-primary: #0b2a4a;
+  --c-primary-2: #12467a;
+  --c-accent: #f59e0b;
+  --c-accent-ink: #1b1300;
+  --c-bg: #ffffff;
+  --c-surface: #f3f6fb;
+  --c-text: #0f1f33;
+  --c-muted: #55667a;
+  --c-line: #dde5ef;
+  --c-wa: #25d366;
+
+  /* type */
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-h3: 1.125rem;
+  --fs-h2: clamp(1.5rem, 1.2rem + 1.5vw, 2.125rem);
+  --fs-h1: clamp(2rem, 1.4rem + 3vw, 3.5rem);
+
+  /* space */
+  --s1: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 0.75rem;
+  --s4: 1rem;
+  --s5: 1.5rem;
+  --s6: 2rem;
+  --s7: 3rem;
+  --s8: 4.5rem;
+
+  /* shape and depth */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+  --r-pill: 999px;
+  --shadow-1: 0 1px 3px rgba(11, 42, 74, 0.1);
+  --shadow-2: 0 8px 24px rgba(11, 42, 74, 0.12);
+
+  /* layout */
+  --container: 1120px;
+  --appbar-h: 56px;
+  --bottomnav-h: 64px;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+
+  /* safe areas (notches, gesture bars) */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}

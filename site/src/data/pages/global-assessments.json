@@ -1,0 +1,19 @@
+{
+  "path": "/global-assessments/",
+  "title": "Global Engineering Skills Assessment Support | CDR Writers",
+  "description": "Skills assessment and registration support for engineers in New Zealand, South Africa, Canada, the UK, Botswana and Papua New Guinea.",
+  "priority": "0.7",
+  "breadcrumbs": [{ "name": "Home", "path": "/" }, { "name": "Global Assessments", "path": "/global-assessments/" }],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": {
+        "icon": "🌍",
+        "h1": "Global Assessment Support",
+        "sub": "Skilled emigration and registration help through our sister companies."
+      }
+    },
+    { "id": "table", "type": "authority-table", "order": 2, "source": "shared/authorities.json" },
+    { "id": "cta", "type": "cta-banner", "order": 3, "source": "shared/cta.json" }
+  ]
+}

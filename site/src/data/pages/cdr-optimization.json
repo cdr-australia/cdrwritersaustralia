@@ -1,0 +1,60 @@
+{
+  "path": "/services/cdr-optimization/",
+  "title": "CDR Optimization Service | CDR Writers Australia",
+  "description": "Fix errors, edit and strengthen an existing CDR so your engineering experience is presented clearly and completely.",
+  "priority": "0.9",
+  "service": { "name": "CDR Optimization", "type": "CDR editing and improvement" },
+  "breadcrumbs": [
+    { "name": "Home", "path": "/" },
+    { "name": "Services", "path": "/services/" },
+    { "name": "CDR Optimization", "path": "/services/cdr-optimization/" }
+  ],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": {
+        "icon": "🛠️",
+        "h1": "CDR Optimization Service",
+        "sub": "Fix errors, edit and improve the CDR you already have."
+      }
+    },
+    {
+      "id": "fixes", "type": "content-block", "order": 2,
+      "data": {
+        "icon": "🧰",
+        "heading": "What We Improve",
+        "paragraphs": ["We keep your real experience and improve how it is presented."],
+        "bullets": [
+          "Grammar, clarity and tone",
+          "A stronger engineering narrative in each episode",
+          "Competency mapping gaps",
+          "Formatting and structure",
+          "Points raised by an assessor"
+        ]
+      }
+    },
+    {
+      "id": "steps", "type": "process-steps", "order": 3,
+      "data": {
+        "heading": "Optimization Process",
+        "items": [
+          { "icon": "🔎", "title": "Audit", "text": "We find what is weak or missing." },
+          { "icon": "✏️", "title": "Fix", "text": "Errors and structure are corrected." },
+          { "icon": "💪", "title": "Strengthen", "text": "Your role and impact are sharpened." },
+          { "icon": "✅", "title": "Final check", "text": "You approve the finished report." }
+        ]
+      }
+    },
+    {
+      "id": "faq", "type": "faq", "order": 4,
+      "data": {
+        "heading": "Optimization Questions",
+        "items": [
+          { "q": "What is the difference between review and optimization?", "a": "A review tells you what to change. Optimization makes the changes for you while keeping your own experience and details." },
+          { "q": "Will my project details stay the same?", "a": "Yes. We improve wording, structure and competency coverage without changing the facts of your work." }
+        ]
+      }
+    },
+    { "id": "cta", "type": "cta-banner", "order": 5, "source": "shared/cta.json" }
+  ]
+}

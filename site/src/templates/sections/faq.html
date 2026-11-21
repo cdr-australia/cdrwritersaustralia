@@ -1,0 +1,16 @@
+<section class="section section--alt" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container container--narrow">
+    <header class="section__head">
+      <h2 class="section__title" id="{{id}}-title">❓ {{heading}}</h2>
+    </header>
+
+    <div class="faq" data-faq>
+      {{#items}}
+      <details class="faq__item">
+        <summary class="faq__q">{{q}}</summary>
+        <p class="faq__a">{{a}}</p>
+      </details>
+      {{/items}}
+    </div>
+  </div>
+</section>

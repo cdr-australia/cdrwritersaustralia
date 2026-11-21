@@ -1,0 +1,57 @@
+{
+  "path": "/services/cdr-review/",
+  "title": "CDR Review Service Australia | CDR Writers Australia",
+  "description": "Get your self-written or existing CDR checked by experts, with clear feedback on structure, depth and competency coverage.",
+  "priority": "0.9",
+  "service": { "name": "CDR Review", "type": "CDR review" },
+  "breadcrumbs": [
+    { "name": "Home", "path": "/" },
+    { "name": "Services", "path": "/services/" },
+    { "name": "CDR Review", "path": "/services/cdr-review/" }
+  ],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": {
+        "icon": "🔍",
+        "h1": "CDR Review Service",
+        "sub": "A second pair of expert eyes on your self-written CDR."
+      }
+    },
+    {
+      "id": "checks", "type": "icon-grid", "order": 2,
+      "data": {
+        "heading": "What We Check",
+        "items": [
+          { "icon": "🧱", "title": "Structure", "text": "Sections, length and Engineers Australia format." },
+          { "icon": "🔧", "title": "Technical depth", "text": "Is your engineering role clear and specific?" },
+          { "icon": "🎯", "title": "Competency coverage", "text": "Do the episodes support the competency elements?" },
+          { "icon": "🗣️", "title": "Language", "text": "Clarity, first-person voice and consistency." }
+        ]
+      }
+    },
+    {
+      "id": "steps", "type": "process-steps", "order": 3,
+      "data": {
+        "heading": "Review Process",
+        "items": [
+          { "icon": "📤", "title": "Send your CDR", "text": "Upload your draft and résumé." },
+          { "icon": "🔍", "title": "Expert check", "text": "Line-by-line review against the guidelines." },
+          { "icon": "📝", "title": "Feedback report", "text": "Clear, prioritised list of changes." },
+          { "icon": "💬", "title": "Follow-up", "text": "Questions answered before you finalise." }
+        ]
+      }
+    },
+    {
+      "id": "faq", "type": "faq", "order": 4,
+      "data": {
+        "heading": "CDR Review Questions",
+        "items": [
+          { "q": "Will you rewrite my CDR during a review?", "a": "A review gives written feedback on what to change. If you want the changes made for you, choose CDR Optimization." },
+          { "q": "Can you review a CDR that Engineers Australia returned?", "a": "Yes. Send it with the assessor's comments and we will focus on the points raised." }
+        ]
+      }
+    },
+    { "id": "cta", "type": "cta-banner", "order": 5, "source": "shared/cta.json" }
+  ]
+}

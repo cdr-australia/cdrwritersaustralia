@@ -1,0 +1,34 @@
+{
+  "heading": "Learn Before You Write",
+  "subheading": "Short guides for engineers preparing a CDR.",
+  "items": [
+    {
+      "icon": "📘",
+      "title": "What Is a CDR?",
+      "text": "What the report is, who needs it and why.",
+      "href": "/guides/what-is-a-cdr/",
+      "read": "4 min"
+    },
+    {
+      "icon": "🧩",
+      "title": "CDR Structure Explained",
+      "text": "Career episodes, CPD and the summary statement.",
+      "href": "/guides/cdr-structure/",
+      "read": "5 min"
+    },
+    {
+      "icon": "🧑‍🔧",
+      "title": "Engineering Occupation Categories",
+      "text": "Professional Engineer, Technologist or Associate.",
+      "href": "/guides/engineering-occupation-categories/",
+      "read": "4 min"
+    },
+    {
+      "icon": "⚠️",
+      "title": "Common CDR Mistakes",
+      "text": "Errors that weaken a report, and how to avoid them.",
+      "href": "/guides/common-cdr-mistakes/",
+      "read": "5 min"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "path": "/applications/migration/",
+  "title": "CDR for Engineers Australia Migration Assessment",
+  "description": "Prepare a CDR for the Engineers Australia skills assessment used in temporary work and permanent residency visa applications.",
+  "priority": "0.9",
+  "service": { "name": "CDR for Migration Skills Assessment", "type": "Migration skills assessment support" },
+  "breadcrumbs": [
+    { "name": "Home", "path": "/" },
+    { "name": "Applications", "path": "/applications/" },
+    { "name": "Migration", "path": "/applications/migration/" }
+  ],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": {
+        "icon": "🛂",
+        "h1": "CDR for Migration",
+        "sub": "Engineers Australia skills assessment for work visas and permanent residency.",
+        "badges": [{ "icon": "🏛️", "text": "Engineers Australia" }, { "icon": "🌏", "text": "Overseas qualifications" }]
+      }
+    },
+    {
+      "id": "who", "type": "content-block", "order": 2,
+      "data": {
+        "icon": "🙋",
+        "heading": "Who Needs It",
+        "paragraphs": [
+          "Engineers Australia uses the CDR to assess engineers whose overseas qualification is not covered by an international accord.",
+          "A positive skills assessment is then used in a temporary work or permanent residency visa application."
+        ]
+      }
+    },
+    {
+      "id": "path", "type": "process-steps", "order": 3,
+      "data": {
+        "heading": "Migration Pathway",
+        "items": [
+          { "icon": "🧭", "title": "Check", "text": "Confirm your occupation and qualification route." },
+          { "icon": "✍️", "title": "Prepare", "text": "Write or fix your CDR." },
+          { "icon": "📤", "title": "Lodge", "text": "Submit it to Engineers Australia yourself." },
+          { "icon": "🛂", "title": "Visa", "text": "Use the outcome in your visa application." }
+        ]
+      }
+    },
+    {
+      "id": "faq", "type": "faq", "order": 4,
+      "data": {
+        "heading": "Migration Questions",
+        "items": [
+          { "q": "Is a CDR the same as a visa application?", "a": "No. The CDR supports a skills assessment by Engineers Australia. A visa application is a separate process lodged with the Department of Home Affairs." },
+          { "q": "Do I need a CDR if my degree is from an accord country?", "a": "Often not, because accord qualifications are usually assessed on the qualification itself. Check the current Engineers Australia requirements for your degree." },
+          { "q": "Can you advise on my visa?", "a": "We offer visa consultation and migration guides. For formal visa advice, consult a registered migration agent." }
+        ]
+      }
+    },
+    { "id": "cta", "type": "cta-banner", "order": 5, "source": "shared/cta.json" }
+  ]
+}

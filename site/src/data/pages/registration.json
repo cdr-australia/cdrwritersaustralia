@@ -1,0 +1,43 @@
+{
+  "path": "/applications/registration/",
+  "title": "CDR for NER & RPEQ Engineering Registers",
+  "description": "Prepare competency documentation for national and state engineering registers, including the National Engineering Register and RPEQ.",
+  "priority": "0.8",
+  "service": { "name": "CDR for Engineering Registers", "type": "Engineering register application support" },
+  "breadcrumbs": [
+    { "name": "Home", "path": "/" },
+    { "name": "Applications", "path": "/applications/" },
+    { "name": "Registration", "path": "/applications/registration/" }
+  ],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": {
+        "icon": "📋",
+        "h1": "CDR for Registration",
+        "sub": "Get your name on recognised engineering registers."
+      }
+    },
+    {
+      "id": "registers", "type": "icon-grid", "order": 2,
+      "data": {
+        "heading": "Registers We Support",
+        "items": [
+          { "icon": "🇦🇺", "title": "NER", "text": "National Engineering Register, kept by Engineers Australia." },
+          { "icon": "🦘", "title": "RPEQ", "text": "Registered Professional Engineer of Queensland, kept by BPEQ." }
+        ]
+      }
+    },
+    {
+      "id": "faq", "type": "faq", "order": 3,
+      "data": {
+        "heading": "Registration Questions",
+        "items": [
+          { "q": "Is registration required to work as an engineer?", "a": "It depends on the register and the state. For example, Queensland requires RPEQ registration to provide professional engineering services there. Check the rules for the place you work." },
+          { "q": "Can you help with other state registers?", "a": "Contact us with your state and goal and we will confirm what support is available." }
+        ]
+      }
+    },
+    { "id": "cta", "type": "cta-banner", "order": 4, "source": "shared/cta.json" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "path": "/contact/",
+  "title": "Contact CDR Writers Australia | Free Consultation",
+  "description": "Contact CDR Writers Australia by WhatsApp, email or phone for a free CDR consultation. Offices in Australia, Canada, New Zealand and India.",
+  "priority": "0.8",
+  "breadcrumbs": [{ "name": "Home", "path": "/" }, { "name": "Contact", "path": "/contact/" }],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": {
+        "icon": "✉️",
+        "h1": "Contact Us",
+        "sub": "Tell us your goal and we will suggest the right service."
+      }
+    },
+    {
+      "id": "reach", "type": "contact-cards", "order": 2,
+      "data": { "heading": "Reach Us", "subheading": "Offices across the globe." }
+    },
+    {
+      "id": "send", "type": "icon-grid", "order": 3,
+      "data": {
+        "alt": true,
+        "heading": "What to Send Us",
+        "items": [
+          { "icon": "📄", "title": "Résumé", "text": "Your latest CV with dates and roles." },
+          { "icon": "🏗️", "title": "Projects", "text": "Short notes on the work you want to feature." },
+          { "icon": "📝", "title": "Existing CDR", "text": "Any draft or earlier version." },
+          { "icon": "💬", "title": "Assessor comments", "text": "Feedback if a report was returned." }
+        ]
+      }
+    }
+  ]
+}

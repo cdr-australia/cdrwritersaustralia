@@ -1,0 +1,22 @@
+<section class="hero" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container hero__inner">
+    {{#eyebrow}}<p class="chip chip--light">{{eyebrow}}</p>{{/eyebrow}}
+    <h1 class="hero__title" id="{{id}}-title">{{h1}}</h1>
+    <p class="hero__sub">{{sub}}</p>
+
+    <ul class="hero__badges">
+      {{#badges}}
+      <li class="chip chip--glass"><span aria-hidden="true">{{icon}}</span> {{text}}</li>
+      {{/badges}}
+    </ul>
+
+    <div class="hero__actions">
+      {{#ctaPrimary}}
+      <a class="btn btn--accent" href="{{href}}"><span aria-hidden="true">{{icon}}</span> {{label}}</a>
+      {{/ctaPrimary}}
+      {{#ctaSecondary}}
+      <a class="btn btn--ghost" href="{{href}}" rel="noopener"><span aria-hidden="true">{{icon}}</span> {{label}}</a>
+      {{/ctaSecondary}}
+    </div>
+  </div>
+</section>

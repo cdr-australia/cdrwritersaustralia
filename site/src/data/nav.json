@@ -1,0 +1,43 @@
+{
+  "header": [
+    { "label": "Home", "href": "/", "icon": "🏠" },
+    { "label": "Services", "href": "/services/", "icon": "🛠️" },
+    { "label": "Applications", "href": "/applications/", "icon": "📌" },
+    { "label": "Guides", "href": "/guides/", "icon": "📚" },
+    { "label": "Contact", "href": "/contact/", "icon": "✉️" }
+  ],
+  "cta": { "label": "Free Consultation", "href": "/contact/" },
+  "bottom": [
+    { "label": "Home", "href": "/", "icon": "🏠" },
+    { "label": "Services", "href": "/services/", "icon": "🛠️" },
+    { "label": "Apply", "href": "/applications/", "icon": "🚀" },
+    { "label": "Contact", "href": "/contact/", "icon": "💬" }
+  ],
+  "footer": [
+    {
+      "title": "Services",
+      "links": [
+        { "label": "CDR Writing", "href": "/services/cdr-writing/" },
+        { "label": "CDR Review", "href": "/services/cdr-review/" },
+        { "label": "CDR Optimization", "href": "/services/cdr-optimization/" }
+      ]
+    },
+    {
+      "title": "Applications",
+      "links": [
+        { "label": "Migration", "href": "/applications/migration/" },
+        { "label": "Accreditation", "href": "/applications/accreditation/" },
+        { "label": "Registration", "href": "/applications/registration/" }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        { "label": "Global Assessments", "href": "/global-assessments/" },
+        { "label": "Guides", "href": "/guides/" },
+        { "label": "Contact", "href": "/contact/" },
+        { "label": "Privacy Policy", "href": "/privacy-policy/" }
+      ]
+    }
+  ]
+}

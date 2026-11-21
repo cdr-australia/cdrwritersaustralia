@@ -1,0 +1,41 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-brand__name">📐 {{site.name}}</p>
+      <p>{{site.tagline}}</p>
+      <p class="footer-powered">Powered by <a href="{{site.poweredBy.url}}" rel="noopener">{{site.poweredBy.name}}</a></p>
+      <ul class="socials" aria-label="Social media">
+        {{#site.socials}}
+        <li><a href="{{url}}" rel="noopener me" target="_blank">{{name}}</a></li>
+        {{/site.socials}}
+      </ul>
+    </div>
+
+    {{#nav.footer}}
+    <nav class="footer-col" aria-label="{{title}}">
+      <h2 class="footer-col__title">{{title}}</h2>
+      <ul>
+        {{#links}}
+        <li><a href="{{href}}">{{label}}</a></li>
+        {{/links}}
+      </ul>
+    </nav>
+    {{/nav.footer}}
+
+    <address class="footer-col">
+      <h2 class="footer-col__title">Offices</h2>
+      <ul>
+        {{#site.offices}}
+        <li>{{flag}} {{country}}: <a href="tel:{{phone}}">{{phone}}</a></li>
+        {{/site.offices}}
+      </ul>
+      <p>✉️ <a href="mailto:{{site.email}}">{{site.email}}</a></p>
+      <p>📍 {{site.address.street}}, {{site.address.locality}} {{site.address.region}} {{site.address.postcode}}</p>
+    </address>
+  </div>
+
+  <div class="container footer-legal">
+    <p class="footer-disclaimer">{{site.disclaimer}}</p>
+    <p>© {{year}} {{site.name}}. All rights reserved.</p>
+  </div>
+</footer>
