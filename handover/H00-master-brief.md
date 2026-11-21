@@ -35,7 +35,7 @@ output. Do not begin the next step until I confirm the checkpoint passed or say
 
 ENVIRONMENT (my machine; you cannot see it)
 Local: Windows, Laragon, PHP 8.5, Composer, Git, MySQL via Laragon. Project folder:
-C:\laragon\www\cdrwa-app
+C:\laragon\app\cdrwa-app
 Production: Hostinger shared hosting, PHP 8.5 (selectable in hPanel), SSH
 available to me. No Node, no root, no daemons on the server.
 Use forward slashes inside PHP and config files.
