@@ -1,0 +1,58 @@
+/* WordPress adapter: only what WordPress adds on top of the static design. */
+
+/* Template-part wrappers must not break the sticky header. */
+.wp-block-template-part { display: contents; }
+
+/* Admin bar for logged-in users. */
+.admin-bar .app-bar { top: 32px; }
+@media (max-width: 782px) { .admin-bar .app-bar { top: 46px; } }
+
+/* Guides listing grid. */
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: var(--s4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.guide-grid > li { margin: 0; }
+.wp-block-query-pagination { display: flex; flex-wrap: wrap; gap: var(--s3); justify-content: center; margin-top: var(--s6); }
+.wp-block-post-excerpt__more-link { display: inline-block; margin-top: var(--s2); font-weight: 600; font-size: var(--fs-sm); }
+
+/* Guide posts written in native blocks. */
+.guide-content > * + * { margin-top: var(--s4); }
+.guide-content h2 { font-size: var(--fs-h2); line-height: 1.25; color: var(--c-primary); margin-top: var(--s6); }
+.guide-content h3 { font-size: var(--fs-h3); line-height: 1.3; color: var(--c-primary); margin-top: var(--s5); }
+.guide-content ul, .guide-content ol { padding-left: var(--s5); }
+.guide-content ul { list-style: disc; }
+.guide-content ol { list-style: decimal; }
+.guide-content li + li { margin-top: var(--s2); }
+.guide-content a { text-decoration: underline; }
+
+/* FAQ written with the Details block. */
+.wp-block-details {
+  background: var(--c-bg);
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  margin-top: var(--s3);
+}
+.wp-block-details > summary {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  padding: var(--s4) calc(var(--s5) + 28px) var(--s4) var(--s4);
+  font-weight: 600;
+  color: var(--c-primary);
+}
+.wp-block-details > summary::-webkit-details-marker { display: none; }
+.wp-block-details > summary::after {
+  content: "+";
+  position: absolute; right: var(--s4); top: 50%; transform: translateY(-50%);
+  width: 28px; height: 28px; display: grid; place-items: center;
+  border-radius: 50%; background: var(--c-surface); font-size: 1.2rem; line-height: 1;
+}
+.wp-block-details[open] { border-color: var(--c-accent); }
+.wp-block-details[open] > summary::after { content: "\2212"; background: var(--c-accent); color: var(--c-accent-ink); }
+.wp-block-details > :not(summary) { margin: 0; padding: 0 var(--s4) var(--s4); color: var(--c-muted); }
