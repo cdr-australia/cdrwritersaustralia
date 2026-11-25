@@ -1,0 +1,138 @@
+{
+  "path": "/design-library/",
+  "title": "Design Library | CDR Writers Australia",
+  "description": "Internal library of section templates with sample content. Not for search engines.",
+  "priority": "0.1",
+  "indexable": false,
+  "noindex": true,
+  "breadcrumbs": [{ "name": "Home", "path": "/" }, { "name": "Design Library", "path": "/design-library/" }],
+  "sections": [
+    {
+      "id": "hero", "type": "page-hero", "order": 1,
+      "data": { "icon": "🎨", "h1": "Design Library", "sub": "Every section template with sample data. Internal use only." }
+    },
+    {
+      "id": "callout-info", "type": "callout", "order": 2,
+      "data": { "variant": "info", "icon": "💡", "title": "Good to know", "text": "Sample information for readers. Replace this text with your own message." }
+    },
+    {
+      "id": "callout-tip", "type": "callout", "order": 3,
+      "data": { "variant": "tip", "icon": "✅", "title": "Helpful tip", "text": "Sample tip for readers. Replace this text with your own message." }
+    },
+    {
+      "id": "callout-warning", "type": "callout", "order": 4,
+      "data": { "variant": "warning", "icon": "⚠️", "title": "Please check", "text": "Sample warning for readers. Replace this text with your own message." }
+    },
+    {
+      "id": "takeaways", "type": "key-takeaways", "order": 5,
+      "data": {
+        "icon": "🎯",
+        "heading": "Key takeaways",
+        "items": ["First key point goes here.", "Second key point goes here.", "Third key point goes here."]
+      }
+    },
+    {
+      "id": "features", "type": "feature-split", "order": 6,
+      "data": {
+        "heading": "Feature heading",
+        "subheading": "A short line that introduces the features.",
+        "items": [
+          { "icon": "📝", "title": "First feature", "text": "A short description of the first feature. Replace this sample text.", "href": "/contact/", "linkLabel": "Learn more" },
+          { "icon": "🔍", "title": "Second feature", "text": "A short description of the second feature. Replace this sample text.", "href": "/contact/", "linkLabel": "Learn more" },
+          { "icon": "🛠️", "title": "Third feature", "text": "A short description of the third feature. Replace this sample text.", "href": "/contact/", "linkLabel": "Learn more" }
+        ]
+      }
+    },
+    {
+      "id": "compare", "type": "comparison-table", "order": 7,
+      "data": {
+        "alt": true,
+        "heading": "Compare the options",
+        "subheading": "A quick side-by-side view.",
+        "columns": [{ "name": "Writing" }, { "name": "Review" }, { "name": "Optimization" }],
+        "rows": [
+          { "label": "Best when", "values": ["You have no draft yet", "You wrote a draft", "Your draft needs fixing"] },
+          { "label": "We write the report", "values": ["✅", "—", "—"] },
+          { "label": "Written feedback", "values": ["—", "✅", "✅"] },
+          { "label": "We edit and rewrite", "values": ["✅", "—", "✅"] },
+          { "label": "Competency check", "values": ["✅", "✅", "✅"] }
+        ]
+      }
+    },
+    {
+      "id": "timeline", "type": "timeline", "order": 8,
+      "data": {
+        "heading": "How it works",
+        "subheading": "Four simple steps.",
+        "items": [
+          { "label": "Step 1", "title": "Share your details", "text": "Send your résumé and project notes." },
+          { "label": "Step 2", "title": "We prepare", "text": "Your report is written, reviewed or improved." },
+          { "label": "Step 3", "title": "You review", "text": "Read every line and ask for changes." },
+          { "label": "Step 4", "title": "You submit", "text": "Lodge the final report yourself." }
+        ]
+      }
+    }
+    ,
+    {
+      "id": "badges", "type": "authority-badges", "order": 9,
+      "data": {
+        "heading": "Assessments and registers we help with",
+        "items": [
+          { "label": "Engineers Australia" }, { "label": "CPEng" }, { "label": "RPEng" },
+          { "label": "NER" }, { "label": "RPEQ" }, { "label": "IPENZ" }, { "label": "ECSA" }
+        ]
+      }
+    },
+    {
+      "id": "stats", "type": "stats-strip", "order": 10,
+      "data": {
+        "alt": true,
+        "heading": "At a glance",
+        "subheading": "Replace these samples with real, verifiable figures.",
+        "items": [
+          { "value": "00+", "label": "Sample figure one" },
+          { "value": "00", "label": "Sample figure two" },
+          { "value": "00%", "label": "Sample figure three" },
+          { "value": "0", "label": "Sample figure four" }
+        ]
+      }
+    },
+    {
+      "id": "testimonials", "type": "testimonials", "order": 11,
+      "data": {
+        "heading": "What clients say",
+        "subheading": "Replace these samples with real, approved quotes.",
+        "items": [
+          { "quote": "Sample testimonial. Replace this with a real quote from a client who agreed to share it.", "initials": "C1", "name": "Client One", "role": "Role, Country" },
+          { "quote": "Sample testimonial. Replace this with a real quote from a client who agreed to share it.", "initials": "C2", "name": "Client Two", "role": "Role, Country" },
+          { "quote": "Sample testimonial. Replace this with a real quote from a client who agreed to share it.", "initials": "C3", "name": "Client Three", "role": "Role, Country" }
+        ]
+      }
+    },
+    {
+      "id": "cases", "type": "case-studies", "order": 12,
+      "data": {
+        "alt": true,
+        "heading": "Case studies",
+        "subheading": "Samples that show the layout. Replace with real cases you can publish.",
+        "items": [
+          { "tag": "Writing", "title": "Sample case study one", "challenge": "Describe the situation the client started with.", "approach": "Describe what was done.", "outcome": "Describe a result you can truthfully share.", "href": "/contact/", "linkLabel": "Read the story" },
+          { "tag": "Review", "title": "Sample case study two", "challenge": "Describe the situation the client started with.", "approach": "Describe what was done.", "outcome": "Describe a result you can truthfully share.", "href": "/contact/", "linkLabel": "Read the story" },
+          { "tag": "Optimization", "title": "Sample case study three", "challenge": "Describe the situation the client started with.", "approach": "Describe what was done.", "outcome": "Describe a result you can truthfully share.", "href": "/contact/", "linkLabel": "Read the story" }
+        ]
+      }
+    },
+    {
+      "id": "experts", "type": "expert-profiles", "order": 13,
+      "data": {
+        "heading": "Meet the experts",
+        "subheading": "Replace with real profiles and approved photos.",
+        "items": [
+          { "initials": "E1", "name": "Expert Name One", "role": "Role title", "credentials": "Qualifications go here", "bio": "A short bio about this person's experience goes here.", "href": "/contact/", "linkLabel": "View profile" },
+          { "initials": "E2", "name": "Expert Name Two", "role": "Role title", "credentials": "Qualifications go here", "bio": "A short bio about this person's experience goes here.", "href": "/contact/", "linkLabel": "View profile" },
+          { "initials": "E3", "name": "Expert Name Three", "role": "Role title", "credentials": "Qualifications go here", "bio": "A short bio about this person's experience goes here.", "href": "/contact/", "linkLabel": "View profile" }
+        ]
+      }
+    }
+  ]
+}

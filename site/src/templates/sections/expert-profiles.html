@@ -1,0 +1,22 @@
+<section class="section{{#alt}} section--alt{{/alt}}" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container">
+    <header class="section__head">
+      <h2 class="section__title" id="{{id}}-title">{{heading}}</h2>
+      {{#subheading}}<p class="section__sub">{{subheading}}</p>{{/subheading}}
+    </header>
+    <ul class="experts">
+      {{#items}}
+      <li>
+        <article class="expert">
+          <div class="expert__photo"{{^image}} aria-hidden="true"{{/image}}>{{#image}}<img src="{{image}}" alt="{{imageAlt}}" loading="lazy">{{/image}}{{^image}}{{initials}}{{/image}}</div>
+          <h3 class="expert__name">{{name}}</h3>
+          <p class="expert__role">{{role}}</p>
+          {{#credentials}}<p class="expert__creds">{{credentials}}</p>{{/credentials}}
+          <p class="expert__bio">{{bio}}</p>
+          {{#href}}<a class="expert__link" href="{{href}}">{{linkLabel}} →</a>{{/href}}
+        </article>
+      </li>
+      {{/items}}
+    </ul>
+  </div>
+</section>

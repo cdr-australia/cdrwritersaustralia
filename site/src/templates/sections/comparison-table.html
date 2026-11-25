@@ -1,0 +1,27 @@
+<section class="section{{#alt}} section--alt{{/alt}}" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container">
+    <header class="section__head">
+      <h2 class="section__title" id="{{id}}-title">{{heading}}</h2>
+      {{#subheading}}<p class="section__sub">{{subheading}}</p>{{/subheading}}
+    </header>
+    <div class="compare">
+      <table>
+        <caption class="sr-only">{{heading}}</caption>
+        <thead>
+          <tr>
+            <th scope="col">Feature</th>
+            {{#columns}}<th scope="col"{{#featured}} class="is-featured"{{/featured}}>{{name}}</th>{{/columns}}
+          </tr>
+        </thead>
+        <tbody>
+          {{#rows}}
+          <tr>
+            <th scope="row">{{label}}</th>
+            {{#values}}<td>{{.}}</td>{{/values}}
+          </tr>
+          {{/rows}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

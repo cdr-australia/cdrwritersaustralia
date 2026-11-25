@@ -1,0 +1,12 @@
+<section class="section{{#alt}} section--alt{{/alt}}" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container container--narrow">
+    <div class="takeaways">
+      <h2 class="takeaways__title" id="{{id}}-title">{{#icon}}<span aria-hidden="true">{{icon}}</span> {{/icon}}{{heading}}</h2>
+      {{#has_items}}
+      <ul class="checklist">
+        {{#items}}<li>{{.}}</li>{{/items}}
+      </ul>
+      {{/has_items}}
+    </div>
+  </div>
+</section>

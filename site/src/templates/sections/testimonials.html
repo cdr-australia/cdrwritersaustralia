@@ -1,0 +1,24 @@
+<section class="section{{#alt}} section--alt{{/alt}}" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container">
+    <header class="section__head">
+      <h2 class="section__title" id="{{id}}-title">{{heading}}</h2>
+      {{#subheading}}<p class="section__sub">{{subheading}}</p>{{/subheading}}
+    </header>
+    <ul class="quotes">
+      {{#items}}
+      <li>
+        <figure class="quote">
+          <blockquote><p>{{quote}}</p></blockquote>
+          <figcaption class="quote__who">
+            <span class="avatar" aria-hidden="true">{{initials}}</span>
+            <span>
+              <span class="quote__name">{{name}}</span>
+              <span class="quote__role">{{role}}</span>
+            </span>
+          </figcaption>
+        </figure>
+      </li>
+      {{/items}}
+    </ul>
+  </div>
+</section>

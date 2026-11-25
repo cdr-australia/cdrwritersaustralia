@@ -56,3 +56,11 @@
 .wp-block-details[open] { border-color: var(--c-accent); }
 .wp-block-details[open] > summary::after { content: "\2212"; background: var(--c-accent); color: var(--c-accent-ink); }
 .wp-block-details > :not(summary) { margin: 0; padding: 0 var(--s4) var(--s4); color: var(--c-muted); }
+/* Tick lists keep their own style inside guide posts. */
+.guide-content ul.wp-block-list.checklist { list-style: none; padding-left: 0; }
+.guide-content .wp-block-list.checklist li + li { margin-top: 0; }
+
+/* Testimonials and case studies built from blocks. */
+.quote > .quote__text { padding-top: var(--s5); color: var(--c-text); }
+.case__facts .case__label { font-size: var(--fs-sm); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--c-primary-2); }
+.case__facts .case__value { color: var(--c-muted); }

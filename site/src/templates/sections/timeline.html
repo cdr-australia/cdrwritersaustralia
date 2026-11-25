@@ -1,0 +1,17 @@
+<section class="section{{#alt}} section--alt{{/alt}}" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container container--narrow">
+    <header class="section__head">
+      <h2 class="section__title" id="{{id}}-title">{{heading}}</h2>
+      {{#subheading}}<p class="section__sub">{{subheading}}</p>{{/subheading}}
+    </header>
+    <ol class="timeline">
+      {{#items}}
+      <li class="timeline__item">
+        {{#label}}<span class="timeline__label">{{label}}</span>{{/label}}
+        <h3 class="timeline__title">{{title}}</h3>
+        <p class="timeline__text">{{text}}</p>
+      </li>
+      {{/items}}
+    </ol>
+  </div>
+</section>

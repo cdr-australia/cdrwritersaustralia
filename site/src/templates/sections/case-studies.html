@@ -1,0 +1,24 @@
+<section class="section{{#alt}} section--alt{{/alt}}" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container">
+    <header class="section__head">
+      <h2 class="section__title" id="{{id}}-title">{{heading}}</h2>
+      {{#subheading}}<p class="section__sub">{{subheading}}</p>{{/subheading}}
+    </header>
+    <ul class="cases">
+      {{#items}}
+      <li>
+        <article class="case">
+          {{#tag}}<span class="chip chip--tag">{{tag}}</span>{{/tag}}
+          <h3 class="case__title">{{title}}</h3>
+          <dl class="case__facts">
+            <div><dt>Challenge</dt><dd>{{challenge}}</dd></div>
+            <div><dt>Approach</dt><dd>{{approach}}</dd></div>
+            <div><dt>Outcome</dt><dd>{{outcome}}</dd></div>
+          </dl>
+          {{#href}}<a class="case__more" href="{{href}}">{{linkLabel}} →</a>{{/href}}
+        </article>
+      </li>
+      {{/items}}
+    </ul>
+  </div>
+</section>

@@ -48,3 +48,10 @@ add_action( 'wp_head', function () {
 /* Not needed: modern browsers render emoji natively. */
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
+/* Pattern category shown in the block inserter. */
+add_action( 'init', function () {
+	register_block_pattern_category(
+		'cdrwa-sections',
+		array( 'label' => __( 'CDR Writers sections', 'cdrwa' ) )
+	);
+} );

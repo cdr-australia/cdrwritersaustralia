@@ -1,0 +1,18 @@
+<section class="section{{#alt}} section--alt{{/alt}}" id="{{id}}"{{#heading}} aria-labelledby="{{id}}-title"{{/heading}}>
+  <div class="container">
+    {{#heading}}
+    <header class="section__head">
+      <h2 class="section__title" id="{{id}}-title">{{heading}}</h2>
+      {{#subheading}}<p class="section__sub">{{subheading}}</p>{{/subheading}}
+    </header>
+    {{/heading}}
+    <ul class="stats">
+      {{#items}}
+      <li class="stat">
+        <span class="stat__value">{{value}}</span>
+        <span class="stat__label">{{label}}</span>
+      </li>
+      {{/items}}
+    </ul>
+  </div>
+</section>

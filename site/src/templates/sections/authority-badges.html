@@ -1,0 +1,12 @@
+<section class="section section--tight{{#alt}} section--alt{{/alt}}" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container">
+    <div class="badges-strip">
+      <h2 class="badges-strip__title" id="{{id}}-title">{{heading}}</h2>
+      <ul class="badges-strip__list">
+        {{#items}}
+        <li>{{#href}}<a class="badge" href="{{href}}">{{label}}</a>{{/href}}{{^href}}<span class="badge">{{label}}</span>{{/href}}</li>
+        {{/items}}
+      </ul>
+    </div>
+  </div>
+</section>
