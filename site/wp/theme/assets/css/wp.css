@@ -64,3 +64,30 @@
 .quote > .quote__text { padding-top: var(--s5); color: var(--c-text); }
 .case__facts .case__label { font-size: var(--fs-sm); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--c-primary-2); }
 .case__facts .case__value { color: var(--c-muted); }
+/* Buttons made with the Button block, styled like the static design. */
+.cta-accent .wp-block-button__link,
+.cta-ghost .wp-block-button__link,
+.cta-outline .wp-block-button__link {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--s2);
+  min-height: 48px; padding: 0 var(--s5);
+  border: 2px solid transparent; border-radius: var(--r-pill);
+  font-size: var(--fs-base); font-weight: 600; line-height: 1; text-decoration: none;
+  transition: transform 0.15s var(--ease), box-shadow 0.15s var(--ease), background 0.15s;
+}
+.cta-accent .wp-block-button__link:active,
+.cta-ghost .wp-block-button__link:active,
+.cta-outline .wp-block-button__link:active { transform: scale(0.96); }
+.cta-accent .wp-block-button__link { background: var(--c-accent); color: var(--c-accent-ink); box-shadow: var(--shadow-1); }
+.cta-accent .wp-block-button__link:hover { box-shadow: var(--shadow-2); text-decoration: none; }
+.cta-ghost .wp-block-button__link { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.55); color: #fff; }
+.cta-ghost .wp-block-button__link:hover { background: rgba(255, 255, 255, 0.18); text-decoration: none; }
+.cta-outline .wp-block-button__link { background: transparent; border-color: var(--c-primary); color: var(--c-primary); }
+.cta-outline .wp-block-button__link:hover { background: var(--c-surface); text-decoration: none; }
+
+/* Hero buttons: full width on small phones. Package buttons: full width in the card. */
+@media (max-width: 479px) {
+  .hero__actions .wp-block-button { flex: 1 1 100%; }
+  .hero__actions .wp-block-button__link { width: 100%; }
+}
+.plan .wp-block-buttons, .plan .wp-block-button { display: block; width: 100%; }
+.plan .wp-block-button__link { width: 100%; }

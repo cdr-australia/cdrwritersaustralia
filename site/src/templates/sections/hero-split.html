@@ -1,0 +1,36 @@
+<section class="hero hero--split" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container hero__inner">
+    <div class="hero__copy">
+      {{#eyebrow}}<p class="chip chip--light">{{eyebrow}}</p>{{/eyebrow}}
+      <h1 class="hero__title" id="{{id}}-title">{{h1}}</h1>
+      <p class="hero__sub">{{sub}}</p>
+      {{#has_badges}}
+      <ul class="hero__badges">
+        {{#badges}}<li class="chip chip--glass"><span aria-hidden="true">{{icon}}</span> {{text}}</li>{{/badges}}
+      </ul>
+      {{/has_badges}}
+      <div class="hero__actions">
+        {{#ctaPrimary}}<a class="btn btn--accent" href="{{href}}"><span aria-hidden="true">{{icon}}</span> {{label}}</a>{{/ctaPrimary}}
+        {{#ctaSecondary}}<a class="btn btn--ghost" href="{{href}}" rel="noopener"><span aria-hidden="true">{{icon}}</span> {{label}}</a>{{/ctaSecondary}}
+      </div>
+    </div>
+    <div class="hero__visual">
+      {{#image}}<img src="{{image}}" alt="{{imageAlt}}" width="520" height="400" loading="eager">{{/image}}
+      {{^image}}
+      {{#has_panel}}
+      <ul class="panel">
+        {{#panel}}
+        <li class="panel__card">
+          <span class="panel__icon" aria-hidden="true">{{icon}}</span>
+          <div>
+            <p class="panel__title">{{title}}</p>
+            <p class="panel__text">{{text}}</p>
+          </div>
+        </li>
+        {{/panel}}
+      </ul>
+      {{/has_panel}}
+      {{/image}}
+    </div>
+  </div>
+</section>

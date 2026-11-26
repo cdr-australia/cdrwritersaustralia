@@ -7,9 +7,25 @@
   "noindex": true,
   "breadcrumbs": [{ "name": "Home", "path": "/" }, { "name": "Design Library", "path": "/design-library/" }],
   "sections": [
-    {
-      "id": "hero", "type": "page-hero", "order": 1,
-      "data": { "icon": "🎨", "h1": "Design Library", "sub": "Every section template with sample data. Internal use only." }
+        {
+      "id": "hero", "type": "hero-split", "order": 1,
+      "data": {
+        "eyebrow": "Sample hero layout",
+        "h1": "Design Library",
+        "sub": "Every section template with sample data. Internal use only.",
+        "badges": [
+          { "icon": "✍️", "text": "Writing" },
+          { "icon": "🔍", "text": "Review" },
+          { "icon": "🛠️", "text": "Optimization" }
+        ],
+        "ctaPrimary": { "label": "Get a Free Quote", "href": "/contact/", "icon": "🚀" },
+        "ctaSecondary": { "label": "WhatsApp Us", "href": "https://wa.me/61291917405", "icon": "💬" },
+        "panel": [
+          { "icon": "✍️", "title": "CDR Writing", "text": "A fresh report from your own projects." },
+          { "icon": "🔍", "title": "CDR Review", "text": "Expert feedback on your draft." },
+          { "icon": "🛠️", "title": "CDR Optimization", "text": "Fix, edit and strengthen." }
+        ]
+      }
     },
     {
       "id": "callout-info", "type": "callout", "order": 2,
@@ -131,6 +147,49 @@
           { "initials": "E1", "name": "Expert Name One", "role": "Role title", "credentials": "Qualifications go here", "bio": "A short bio about this person's experience goes here.", "href": "/contact/", "linkLabel": "View profile" },
           { "initials": "E2", "name": "Expert Name Two", "role": "Role title", "credentials": "Qualifications go here", "bio": "A short bio about this person's experience goes here.", "href": "/contact/", "linkLabel": "View profile" },
           { "initials": "E3", "name": "Expert Name Three", "role": "Role title", "credentials": "Qualifications go here", "bio": "A short bio about this person's experience goes here.", "href": "/contact/", "linkLabel": "View profile" }
+        ]
+      }
+    },
+    {
+      "id": "pricing", "type": "pricing-packages", "order": 14,
+      "data": {
+        "heading": "Choose a package",
+        "subheading": "Sample packages. Replace with your real packages and prices.",
+        "footnote": "Sample prices. Replace with your real prices and add any taxes or conditions.",
+        "items": [
+          {
+            "name": "Package One", "price": "$000", "period": "per report",
+            "summary": "A short line describing this package.",
+            "features": ["First feature goes here", "Second feature goes here", "Third feature goes here"],
+            "ctaLabel": "Choose this package", "ctaHref": "/contact/"
+          },
+          {
+            "name": "Package Two", "badge": "Most popular", "featured": true,
+            "price": "$000", "period": "per report",
+            "summary": "A short line describing this package.",
+            "features": ["First feature goes here", "Second feature goes here", "Third feature goes here", "Fourth feature goes here"],
+            "ctaLabel": "Choose this package", "ctaHref": "/contact/"
+          },
+          {
+            "name": "Package Three", "price": "$000", "period": "per report",
+            "summary": "A short line describing this package.",
+            "features": ["First feature goes here", "Second feature goes here", "Third feature goes here"],
+            "ctaLabel": "Choose this package", "ctaHref": "/contact/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "latest", "type": "latest-guides", "order": 15,
+      "data": {
+        "alt": true,
+        "heading": "Latest guides",
+        "subheading": "Sample cards. On the live site these show your newest guides.",
+        "viewAll": { "label": "View all guides", "href": "/guides/" },
+        "items": [
+          { "icon": "📘", "title": "Sample guide one", "date": "00 Month 2026", "read": "4 min", "text": "A short summary of the guide goes here.", "href": "/guides/" },
+          { "icon": "🧩", "title": "Sample guide two", "date": "00 Month 2026", "read": "5 min", "text": "A short summary of the guide goes here.", "href": "/guides/" },
+          { "icon": "⚠️", "title": "Sample guide three", "date": "00 Month 2026", "read": "5 min", "text": "A short summary of the guide goes here.", "href": "/guides/" }
         ]
       }
     }

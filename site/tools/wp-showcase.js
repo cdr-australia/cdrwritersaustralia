@@ -1,38 +1,31 @@
 'use strict';
 /* Builds a WordPress import file with ONE page that shows every section pattern,
    in the same order as the Node design-library page, for side-by-side checks.
-   Run "npm run build" first, then:  node tools/wp-showcase.js
+   Run:  node tools/wp-showcase.js
    Output: wp/out/cdrwa-showcase.xml   (import into LOCAL WordPress only) */
 const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const PATTERNS = path.join(ROOT, 'wp', 'theme', 'patterns');
-const DIST_PAGE = path.join(ROOT, 'dist', 'design-library', 'index.html');
 const OUT_FILE = path.join(ROOT, 'wp', 'out', 'cdrwa-showcase.xml');
 const site = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'data', 'site.json'), 'utf8'));
 const SITE_URL = site.url.replace(/\/$/, '');
 
 /* Same order as src/data/pages/design-library.json. Add new pattern file names here. */
 const ORDER = [
+  'hero-split',
   'callout-info', 'callout-tip', 'callout-warning',
   'key-takeaways', 'feature-split', 'comparison-table', 'timeline',
-  'authority-badges', 'stats-strip', 'testimonials', 'case-studies', 'expert-profiles'
+  'authority-badges', 'stats-strip', 'testimonials', 'case-studies', 'expert-profiles',
+  'pricing-packages', 'latest-guides'
 ];
 
 const cdata = (s) => '<![CDATA[' + String(s).replace(/\]\]>/g, ']]]]><![CDATA[>') + ']]>';
 const now = new Date().toISOString().slice(0, 19).replace('T', ' ');
 const rfc822 = (d) => new Date(d.replace(' ', 'T') + 'Z').toUTCString();
 
-/* the hero comes from the built Node page, so both pages start the same way */
-if (!fs.existsSync(DIST_PAGE)) {
-  throw new Error('dist/design-library/index.html not found. Run "npm run build" first.');
-}
-const built = fs.readFileSync(DIST_PAGE, 'utf8');
-const heroMatch = built.match(/<section class="page-hero"[\s\S]*?<\/section>/);
-if (!heroMatch) throw new Error('Could not find the page hero in the built design library page.');
-
-const blocks = ['<!-- wp:html -->\n' + heroMatch[0] + '\n<!-- /wp:html -->'];
+const blocks = [];
 for (const name of ORDER) {
   const file = path.join(PATTERNS, name + '.php');
   if (!fs.existsSync(file)) {
@@ -106,4 +99,4 @@ const xml =
 fs.mkdirSync(path.dirname(OUT_FILE), { recursive: true });
 fs.writeFileSync(OUT_FILE, xml);
 console.log('Created ' + OUT_FILE);
-console.log('Patterns included: ' + (blocks.length - 1));
+console.log('Patterns included: ' + blocks.length);

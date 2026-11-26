@@ -374,3 +374,62 @@ a.badge:hover { border-color: var(--c-accent); text-decoration: none; }
 }
 .stat__value { font-size: clamp(1.75rem, 1.3rem + 2vw, 2.75rem); font-weight: 800; line-height: 1.1; color: var(--c-accent); }
 .stat__label { font-size: var(--fs-sm); color: rgba(255, 255, 255, 0.86); }
+/* ---------- hero split ---------- */
+.hero--split .hero__inner { grid-template-columns: 1fr; gap: var(--s6); align-items: center; justify-items: stretch; }
+.hero__copy { display: grid; gap: var(--s4); justify-items: start; }
+.hero__visual { display: grid; justify-items: center; }
+.hero__visual img { width: 100%; max-width: 520px; height: auto; border-radius: var(--r-lg); box-shadow: var(--shadow-2); }
+.panel { display: grid; gap: var(--s3); width: 100%; max-width: 440px; margin: 0; padding: 0; list-style: none; }
+.panel__card {
+  display: flex; align-items: center; gap: var(--s3);
+  padding: var(--s3) var(--s4);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.22); border-radius: var(--r-md);
+}
+.panel__card:nth-child(2) { margin-left: var(--s5); }
+.panel__icon {
+  display: grid; place-items: center; flex: none;
+  width: 44px; height: 44px; border-radius: 12px;
+  background: var(--c-accent); font-size: 1.4rem; line-height: 1;
+}
+.panel__title { font-weight: 700; color: #fff; }
+.panel__text { font-size: var(--fs-sm); color: rgba(255, 255, 255, 0.82); }
+@media (min-width: 900px) {
+  .hero--split .hero__inner { grid-template-columns: 1.15fr 0.85fr; gap: var(--s7); }
+}
+
+/* ---------- outline button (for light backgrounds) ---------- */
+.btn--outline { background: transparent; border-color: var(--c-primary); color: var(--c-primary); }
+.btn--outline:hover { background: var(--c-surface); }
+
+/* ---------- pricing packages ---------- */
+.plans { display: grid; gap: var(--s5); grid-template-columns: 1fr; margin: 0; padding: 0; list-style: none; }
+@media (min-width: 900px) { .plans { grid-template-columns: repeat(3, 1fr); gap: var(--s4); } }
+.plan {
+  position: relative; display: grid; gap: var(--s3); align-content: start;
+  padding: var(--s5);
+  background: var(--c-bg); border: 1px solid var(--c-line); border-radius: var(--r-md);
+  box-shadow: var(--shadow-1);
+}
+.plan--featured { border: 2px solid var(--c-accent); box-shadow: var(--shadow-2); }
+@media (min-width: 900px) { .plan--featured { margin-block: calc(var(--s3) * -1); padding-block: calc(var(--s5) + var(--s3)); } }
+.plan__badge {
+  position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%);
+  padding: var(--s1) var(--s4); border-radius: var(--r-pill);
+  background: var(--c-accent); color: var(--c-accent-ink);
+  font-size: var(--fs-sm); font-weight: 800; white-space: nowrap;
+}
+.plan__name { font-size: var(--fs-h3); line-height: 1.3; color: var(--c-primary); }
+.plan__price { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s2); }
+.plan__amount { font-size: clamp(2rem, 1.5rem + 2vw, 2.75rem); font-weight: 800; line-height: 1.1; color: var(--c-primary); }
+.plan__period { font-size: var(--fs-sm); color: var(--c-muted); }
+.plan__summary { font-size: 0.95rem; color: var(--c-muted); }
+.plans__note { margin-top: var(--s5); text-align: center; font-size: var(--fs-sm); color: var(--c-muted); }
+
+/* ---------- latest guides header ---------- */
+.section__head--split {
+  display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between;
+  gap: var(--s3); text-align: left;
+}
+.section__link { font-weight: 600; }
+.card__meta { font-size: var(--fs-sm); color: var(--c-muted); }

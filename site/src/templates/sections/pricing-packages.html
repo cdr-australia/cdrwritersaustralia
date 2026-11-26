@@ -1,0 +1,28 @@
+<section class="section{{#alt}} section--alt{{/alt}}" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container">
+    <header class="section__head">
+      <h2 class="section__title" id="{{id}}-title">{{heading}}</h2>
+      {{#subheading}}<p class="section__sub">{{subheading}}</p>{{/subheading}}
+    </header>
+    <ul class="plans">
+      {{#items}}
+      <li class="plan{{#featured}} plan--featured{{/featured}}">
+        {{#badge}}<span class="plan__badge">{{badge}}</span>{{/badge}}
+        <h3 class="plan__name">{{name}}</h3>
+        <p class="plan__price">
+          <span class="plan__amount">{{price}}</span>
+          {{#period}}<span class="plan__period">{{period}}</span>{{/period}}
+        </p>
+        {{#summary}}<p class="plan__summary">{{summary}}</p>{{/summary}}
+        {{#has_features}}
+        <ul class="checklist">
+          {{#features}}<li>{{.}}</li>{{/features}}
+        </ul>
+        {{/has_features}}
+        <a class="btn {{#featured}}btn--accent{{/featured}}{{^featured}}btn--outline{{/featured}}" href="{{ctaHref}}">{{ctaLabel}}</a>
+      </li>
+      {{/items}}
+    </ul>
+    {{#footnote}}<p class="plans__note">{{footnote}}</p>{{/footnote}}
+  </div>
+</section>
