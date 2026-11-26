@@ -8,10 +8,7 @@
   "breadcrumbs": [{ "name": "Home", "path": "/" }],
   "sections": [
     {
-      "id": "hero",
-      "type": "hero",
-      "order": 1,
-      "enabled": true,
+      "id": "hero", "type": "hero-split", "order": 1,
       "data": {
         "eyebrow": "A wing of CDR Australia",
         "h1": "CDR Writers Australia",
@@ -22,22 +19,172 @@
           { "icon": "🛠️", "text": "Optimization" }
         ],
         "ctaPrimary": { "label": "Get a Free Quote", "href": "/contact/", "icon": "🚀" },
-        "ctaSecondary": { "label": "WhatsApp Us", "href": "https://wa.me/61291917405", "icon": "💬" }
+        "ctaSecondary": { "label": "WhatsApp Us", "href": "https://wa.me/61291917405", "icon": "💬" },
+        "panel": [
+          { "icon": "✍️", "title": "CDR Writing", "text": "A fresh report built from your own projects." },
+          { "icon": "🔍", "title": "CDR Review", "text": "Expert feedback on your self-written report." },
+          { "icon": "🛠️", "title": "CDR Optimization", "text": "Fix errors and strengthen what you have." }
+        ]
       }
     },
     {
-      "id": "services",
-      "type": "services-grid",
-      "order": 2,
-      "enabled": true,
+      "id": "badges", "type": "authority-badges", "order": 2,
+      "data": {
+        "alt": true,
+        "heading": "Assessments and registers we help with",
+        "items": [
+          { "label": "Engineers Australia" }, { "label": "CPEng" }, { "label": "RPEng" },
+          { "label": "NER" }, { "label": "RPEQ" }, { "label": "IPENZ" }, { "label": "ECSA" }
+        ]
+      }
+    },
+    {
+      "id": "services", "type": "services-grid", "order": 3,
       "source": "shared/services.json"
     },
     {
-      "id": "faq",
-      "type": "faq",
-      "order": 3,
-      "enabled": true,
+      "id": "how", "type": "process-steps", "order": 4,
+      "data": {
+        "heading": "From first message to final report",
+        "items": [
+          { "icon": "🎯", "title": "Tell us your goal", "text": "Migration, accreditation or registration: we start there." },
+          { "icon": "📝", "title": "Send your details", "text": "Your résumé, projects and any existing draft." },
+          { "icon": "✍️", "title": "We prepare your report", "text": "Written, reviewed or improved around your own work." },
+          { "icon": "✅", "title": "You review and submit", "text": "Read every line, then lodge it yourself." }
+        ]
+      }
+    },
+    {
+      "id": "why", "type": "feature-split", "order": 5,
+      "data": {
+        "alt": true,
+        "heading": "Why work with us",
+        "subheading": "Support from the first draft to the final submission.",
+        "items": [
+          { "icon": "📝", "title": "Built from your own career", "text": "Every report is written around your projects, duties and achievements, so it reads as your own work.", "href": "/services/cdr-writing/", "linkLabel": "See CDR Writing" },
+          { "icon": "🧭", "title": "Support beyond the report", "text": "Complete documentation, submission support, visa consultation, migration guides and career advice.", "href": "/applications/", "linkLabel": "Explore applications" },
+          { "icon": "🌍", "title": "Help across borders", "text": "Through our sister companies we support assessments in New Zealand, South Africa, Canada, the United Kingdom and more.", "href": "/global-assessments/", "linkLabel": "See global support" }
+        ]
+      }
+    },
+    {
+      "id": "stats", "type": "stats-strip", "order": 6,
+      "data": {
+        "heading": "At a glance",
+        "subheading": "Sample figures. Replace with real, verifiable numbers.",
+        "items": [
+          { "value": "00+", "label": "Sample figure one" },
+          { "value": "00", "label": "Sample figure two" },
+          { "value": "00%", "label": "Sample figure three" },
+          { "value": "0", "label": "Sample figure four" }
+        ]
+      }
+    },
+    {
+      "id": "fields", "type": "image-slider", "order": 7,
+      "data": {
+        "alt": true,
+        "heading": "Engineering fields we support",
+        "subheading": "Sample slides. Replace with real images on the live site.",
+        "interval": 4000,
+        "items": [
+          { "icon": "🏗️", "title": "Civil", "text": "Sample caption goes here." },
+          { "icon": "⚙️", "title": "Mechanical", "text": "Sample caption goes here." },
+          { "icon": "🔌", "title": "Electrical", "text": "Sample caption goes here." },
+          { "icon": "💻", "title": "Software and ICT", "text": "Sample caption goes here." },
+          { "icon": "🧪", "title": "Chemical", "text": "Sample caption goes here." },
+          { "icon": "⛏️", "title": "Mining", "text": "Sample caption goes here." },
+          { "icon": "📡", "title": "Telecommunications", "text": "Sample caption goes here." }
+        ]
+      }
+    },
+    {
+      "id": "voices", "type": "testimonials", "order": 8,
+      "data": {
+        "heading": "What clients say",
+        "subheading": "Replace these samples with real, approved quotes.",
+        "items": [
+          { "quote": "Sample testimonial. Replace this with a real quote from a client who agreed to share it.", "initials": "C1", "name": "Client One", "role": "Role, Country" },
+          { "quote": "Sample testimonial. Replace this with a real quote from a client who agreed to share it.", "initials": "C2", "name": "Client Two", "role": "Role, Country" },
+          { "quote": "Sample testimonial. Replace this with a real quote from a client who agreed to share it.", "initials": "C3", "name": "Client Three", "role": "Role, Country" }
+        ]
+      }
+    },
+    {
+      "id": "cases", "type": "case-studies", "order": 9,
+      "data": {
+        "alt": true,
+        "heading": "Case studies",
+        "subheading": "Samples that show the layout. Replace with real cases you can publish.",
+        "items": [
+          { "tag": "Writing", "title": "Sample case study one", "challenge": "Describe the situation the client started with.", "approach": "Describe what was done.", "outcome": "Describe a result you can truthfully share.", "href": "/contact/", "linkLabel": "Read the story" },
+          { "tag": "Review", "title": "Sample case study two", "challenge": "Describe the situation the client started with.", "approach": "Describe what was done.", "outcome": "Describe a result you can truthfully share.", "href": "/contact/", "linkLabel": "Read the story" },
+          { "tag": "Optimization", "title": "Sample case study three", "challenge": "Describe the situation the client started with.", "approach": "Describe what was done.", "outcome": "Describe a result you can truthfully share.", "href": "/contact/", "linkLabel": "Read the story" }
+        ]
+      }
+    },
+    {
+      "id": "team", "type": "expert-profiles", "order": 10,
+      "data": {
+        "heading": "Meet the experts",
+        "subheading": "Replace with real profiles and approved photos.",
+        "items": [
+          { "initials": "E1", "name": "Expert Name One", "role": "Role title", "credentials": "Qualifications go here", "bio": "A short bio about this person's experience goes here.", "href": "/contact/", "linkLabel": "View profile" },
+          { "initials": "E2", "name": "Expert Name Two", "role": "Role title", "credentials": "Qualifications go here", "bio": "A short bio about this person's experience goes here.", "href": "/contact/", "linkLabel": "View profile" },
+          { "initials": "E3", "name": "Expert Name Three", "role": "Role title", "credentials": "Qualifications go here", "bio": "A short bio about this person's experience goes here.", "href": "/contact/", "linkLabel": "View profile" }
+        ]
+      }
+    },
+    {
+      "id": "pricing", "type": "pricing-packages", "order": 11,
+      "data": {
+        "alt": true,
+        "heading": "Choose a package",
+        "subheading": "Sample packages. Replace with your real packages and prices.",
+        "footnote": "Sample prices. Replace with your real prices and add any taxes or conditions.",
+        "items": [
+          {
+            "name": "Package One", "price": "$000", "period": "per report",
+            "summary": "A short line describing this package.",
+            "features": ["First feature goes here", "Second feature goes here", "Third feature goes here"],
+            "ctaLabel": "Choose this package", "ctaHref": "/contact/"
+          },
+          {
+            "name": "Package Two", "badge": "Most popular", "featured": true,
+            "price": "$000", "period": "per report",
+            "summary": "A short line describing this package.",
+            "features": ["First feature goes here", "Second feature goes here", "Third feature goes here", "Fourth feature goes here"],
+            "ctaLabel": "Choose this package", "ctaHref": "/contact/"
+          },
+          {
+            "name": "Package Three", "price": "$000", "period": "per report",
+            "summary": "A short line describing this package.",
+            "features": ["First feature goes here", "Second feature goes here", "Third feature goes here"],
+            "ctaLabel": "Choose this package", "ctaHref": "/contact/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "latest", "type": "latest-guides", "order": 12,
+      "data": {
+        "heading": "Latest guides",
+        "subheading": "Plain-English answers before you write, review or submit.",
+        "viewAll": { "label": "View all guides", "href": "/guides/" },
+        "items": [
+          { "icon": "📘", "title": "What Is a CDR?", "date": "20 November 2026", "read": "4 min", "text": "What the report is, who needs it and why.", "href": "/guides/what-is-a-cdr/" },
+          { "icon": "🧩", "title": "CDR Structure Explained", "date": "20 November 2026", "read": "5 min", "text": "Career episodes, CPD and the summary statement.", "href": "/guides/cdr-structure/" },
+          { "icon": "⚠️", "title": "Common CDR Mistakes", "date": "20 November 2026", "read": "5 min", "text": "Errors that weaken a report, and how to avoid them.", "href": "/guides/common-cdr-mistakes/" }
+        ]
+      }
+    },
+    {
+      "id": "faq", "type": "faq", "order": 13,
       "source": "shared/faq.json"
+    },
+    {
+      "id": "cta", "type": "cta-banner", "order": 14,
+      "source": "shared/cta.json"
     }
   ]
 }
