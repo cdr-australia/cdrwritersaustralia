@@ -81,7 +81,7 @@ function renderSection(section, ctx) {
   try {
     const tplPath = path.join(SRC, 'templates', 'sections', section.type + '.html');
     const tpl = readText(tplPath);
-    const view = { ...addFlags(getSectionData(section, ctx.page)), id: section.id, site: ctx.site, page: ctx.page };
+    const view = { ...addFlags(getSectionData(section, ctx.page)), id: section.id, site: ctx.site, page: ctx.page, buildId: BUILD_ID };
     return Mustache.render(tpl, view, ctx.partials);
   } catch (err) {
     console.warn(`  [skipped] section "${section.id}" (${section.type}): ${err.message}`);

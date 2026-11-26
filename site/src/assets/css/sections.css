@@ -433,3 +433,89 @@ a.badge:hover { border-color: var(--c-accent); text-decoration: none; }
 }
 .section__link { font-weight: 600; }
 .card__meta { font-size: var(--fs-sm); color: var(--c-muted); }
+/* ---------- image slider ---------- */
+.slider {
+  --slide-w: clamp(9rem, 22vw, 17.5rem);
+  --x1: 0.955; --x2: 1.74; --x3: 2.4;
+  --s1: 0.83; --s2: 0.66;
+  position: relative; overflow: hidden;
+}
+
+/* Without JavaScript: a plain scrollable row of images. */
+.slider__stage {
+  display: flex; gap: var(--s3); overflow-x: auto;
+  padding: var(--s4) var(--s4) var(--s5);
+  scroll-snap-type: x mandatory;
+}
+.slider__slide { flex: 0 0 var(--slide-w); margin: 0; scroll-snap-align: center; }
+
+.slide__link { display: block; color: inherit; text-decoration: none; }
+.slide__media {
+  position: relative; aspect-ratio: 4 / 5; overflow: hidden;
+  border-radius: var(--r-md);
+  background: linear-gradient(135deg, #dbe8fb 0%, var(--c-surface) 100%);
+  box-shadow: var(--shadow-2);
+}
+.slide__media img { display: block; width: 100%; height: 100%; object-fit: cover; -webkit-user-drag: none; }
+.slide__ph { display: grid; place-items: center; width: 100%; height: 100%; font-size: 4rem; line-height: 1; }
+.slide__caption {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  display: grid; gap: var(--s1); padding: var(--s6) var(--s4) var(--s4);
+  color: #fff; background: linear-gradient(to top, rgba(8, 20, 36, 0.85), rgba(8, 20, 36, 0));
+}
+.slide__title { font-weight: 700; }
+.slide__text { font-size: var(--fs-sm); color: rgba(255, 255, 255, 0.86); }
+
+/* With JavaScript: the centred stage. */
+.slider--js .slider__stage {
+  display: block; position: relative; overflow: visible; padding: 0;
+  height: calc(var(--slide-w) * 1.25 + var(--s6));
+  touch-action: pan-y; user-select: none; -webkit-user-select: none;
+}
+.slider--js .slider__stage:focus-visible { outline: 3px solid var(--c-accent); outline-offset: -3px; }
+.slider--js .slider__slide {
+  position: absolute; top: 50%; left: 50%; z-index: var(--z, 1);
+  flex: none; width: var(--slide-w);
+  opacity: var(--op, 1);
+  transform: translate(calc(-50% + var(--sign, 1) * var(--x, 0) * var(--slide-w)), -50%) scale(var(--s, 1));
+  transition: transform 0.55s var(--ease), opacity 0.55s var(--ease), visibility 0s;
+  cursor: pointer;
+}
+.slider--js .slider__slide[data-side="l"] { --sign: -1; }
+.slider--js .slider__slide[data-side="r"] { --sign: 1; }
+.slider--js .slider__slide[data-a="0"] { --x: 0; --s: 1; --op: 1; --z: 5; cursor: default; }
+.slider--js .slider__slide[data-a="1"] { --x: var(--x1); --s: var(--s1); --op: 0.92; --z: 4; }
+.slider--js .slider__slide[data-a="2"] { --x: var(--x2); --s: var(--s2); --op: 0.8; --z: 3; }
+.slider--js .slider__slide[data-a="3"] {
+  --x: var(--x3); --s: 0.5; --op: 0; --z: 1;
+  visibility: hidden; pointer-events: none;
+  transition: transform 0.55s var(--ease), opacity 0.55s var(--ease), visibility 0s linear 0.55s;
+}
+.slider--js .slide__caption { opacity: 0; transition: opacity 0.4s var(--ease); }
+.slider--js .slider__slide[data-a="0"] .slide__caption { opacity: 1; }
+
+/* Controls added by the script. */
+.slider__controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--s3); padding: var(--s2) var(--s4) var(--s5); }
+.slider__btn {
+  display: grid; place-items: center; width: 44px; height: 44px;
+  border: 2px solid var(--c-primary); border-radius: 50%;
+  background: var(--c-bg); color: var(--c-primary);
+  font-size: 1.25rem; line-height: 1;
+  transition: background 0.15s, transform 0.15s;
+}
+.slider__btn:hover { background: var(--c-surface); }
+.slider__btn:active { transform: scale(0.94); }
+.slider__toggle { font-size: 0.8rem; }
+.slider__dots { display: flex; flex-wrap: wrap; justify-content: center; }
+.slider__dot { display: grid; place-items: center; width: 24px; height: 24px; padding: 0; border: 0; background: transparent; }
+.slider__dot::before { content: ""; width: 12px; height: 12px; border-radius: 50%; background: var(--c-line); transition: background 0.2s, transform 0.2s; }
+.slider__dot[aria-current="true"]::before { background: var(--c-accent); transform: scale(1.2); }
+
+/* Phones: one large image with the neighbours peeking in. */
+@media (max-width: 699px) {
+  .slider { --slide-w: 56vw; --x1: 0.8; --x2: 1.5; }
+  .slider--js .slider__slide[data-a="2"] {
+    --op: 0; visibility: hidden; pointer-events: none;
+    transition: transform 0.55s var(--ease), opacity 0.55s var(--ease), visibility 0s linear 0.55s;
+  }
+}

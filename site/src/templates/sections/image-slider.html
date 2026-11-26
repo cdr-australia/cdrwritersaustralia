@@ -1,0 +1,29 @@
+<section class="section{{#alt}} section--alt{{/alt}}" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container">
+    <header class="section__head">
+      <h2 class="section__title" id="{{id}}-title">{{heading}}</h2>
+      {{#subheading}}<p class="section__sub">{{subheading}}</p>{{/subheading}}
+    </header>
+  </div>
+  <div class="slider" role="region" aria-roledescription="carousel" aria-label="{{heading}}" data-interval="{{interval}}">
+    <div class="slider__stage">
+      {{#items}}
+      <div class="slider__slide" role="group" aria-roledescription="slide">
+        {{#href}}<a class="slide__link" href="{{href}}">{{/href}}
+        <div class="slide__media">
+          {{#image}}<img src="{{image}}" alt="{{imageAlt}}" width="400" height="500" loading="lazy">{{/image}}
+          {{^image}}<span class="slide__ph" aria-hidden="true">{{icon}}</span>{{/image}}
+          {{#title}}
+          <div class="slide__caption">
+            <span class="slide__title">{{title}}</span>
+            {{#text}}<span class="slide__text">{{text}}</span>{{/text}}
+          </div>
+          {{/title}}
+        </div>
+        {{#href}}</a>{{/href}}
+      </div>
+      {{/items}}
+    </div>
+  </div>
+  <script src="/assets/js/sections/image-slider.js?v={{buildId}}" defer></script>
+</section>

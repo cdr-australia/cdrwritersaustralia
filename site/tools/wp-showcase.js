@@ -18,7 +18,7 @@ const ORDER = [
   'callout-info', 'callout-tip', 'callout-warning',
   'key-takeaways', 'feature-split', 'comparison-table', 'timeline',
   'authority-badges', 'stats-strip', 'testimonials', 'case-studies', 'expert-profiles',
-  'pricing-packages', 'latest-guides'
+  'pricing-packages', 'latest-guides','image-slider'
 ];
 
 const cdata = (s) => '<![CDATA[' + String(s).replace(/\]\]>/g, ']]]]><![CDATA[>') + ']]>';
@@ -33,7 +33,11 @@ for (const name of ORDER) {
     continue;
   }
   const text = fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, '');
-  blocks.push(text.replace(/^<\?php[\s\S]*?\?>\s*/, '').trim());
+    const body = text.replace(/^<\?php[\s\S]*?\?>\s*/, '').trim();
+  blocks.push(body.replace(
+    /<\?php\s+echo\s+esc_url\(\s*wp_make_link_relative\(\s*get_theme_file_uri\(\s*'([^']+)'\s*\)\s*\)\s*\);\s*\?>/g,
+    '/wp-content/themes/cdrwa/$1'
+  ));
 }
 const content = blocks.join('\n\n');
 

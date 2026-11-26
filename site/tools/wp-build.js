@@ -26,7 +26,8 @@ if (!fs.existsSync(indexFile)) {
 }
 const html = fs.readFileSync(indexFile, 'utf8');
 
-/* 1. fresh output with the hand-written theme files */
+/* 1. fresh output with the hand-written theme files (style.css, theme.json,
+      functions.php, templates, patterns, wp.css) */
 fs.rmSync(OUT, { recursive: true, force: true });
 mk(OUT);
 fs.cpSync(THEME_SRC, OUT, { recursive: true });
@@ -36,9 +37,18 @@ mk(path.join(OUT, 'assets', 'css'));
 for (const f of ['tokens', 'base', 'app-shell', 'sections']) {
   fs.copyFileSync(path.join(ASSETS, 'css', f + '.css'), path.join(OUT, 'assets', 'css', f + '.css'));
 }
+
 mk(path.join(OUT, 'assets', 'js'));
 fs.copyFileSync(path.join(ASSETS, 'js', 'nav.js'), path.join(OUT, 'assets', 'js', 'nav.js'));
-fs.copyFileSync(path.join(ASSETS, 'js', 'sections', 'faq.js'), path.join(OUT, 'assets', 'js', 'faq.js'));
+
+/* every section script (faq.js, image-slider.js, and any future one) */
+const sectionJs = path.join(ASSETS, 'js', 'sections');
+if (fs.existsSync(sectionJs)) {
+  for (const f of fs.readdirSync(sectionJs).filter((x) => x.endsWith('.js'))) {
+    fs.copyFileSync(path.join(sectionJs, f), path.join(OUT, 'assets', 'js', f));
+  }
+}
+
 if (fs.existsSync(path.join(ASSETS, 'icons'))) {
   fs.cpSync(path.join(ASSETS, 'icons'), path.join(OUT, 'assets', 'icons'), { recursive: true });
 }

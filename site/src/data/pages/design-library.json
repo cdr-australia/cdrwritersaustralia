@@ -192,6 +192,23 @@
           { "icon": "⚠️", "title": "Sample guide three", "date": "00 Month 2026", "read": "5 min", "text": "A short summary of the guide goes here.", "href": "/guides/" }
         ]
       }
+    },
+    {
+      "id": "slider", "type": "image-slider", "order": 16,
+      "data": {
+        "heading": "Image slider",
+        "subheading": "Sample slides. Replace with real images on the live site.",
+        "interval": 4000,
+        "items": [
+          { "icon": "🏗️", "title": "Sample image one", "text": "A short caption goes here." },
+          { "icon": "⚙️", "title": "Sample image two", "text": "A short caption goes here." },
+          { "icon": "🔌", "title": "Sample image three", "text": "A short caption goes here." },
+          { "icon": "🧪", "title": "Sample image four", "text": "A short caption goes here." },
+          { "icon": "🛣️", "title": "Sample image five", "text": "A short caption goes here." },
+          { "icon": "🏭", "title": "Sample image six", "text": "A short caption goes here." },
+          { "icon": "🚆", "title": "Sample image seven", "text": "A short caption goes here." }
+        ]
+      }
     }
   ]
 }
