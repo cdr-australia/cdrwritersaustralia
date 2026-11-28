@@ -18,12 +18,28 @@ const ORDER = [
   'callout-info', 'callout-tip', 'callout-warning',
   'key-takeaways', 'feature-split', 'comparison-table', 'timeline',
   'authority-badges', 'stats-strip', 'testimonials', 'case-studies', 'expert-profiles',
-  'pricing-packages', 'latest-guides','image-slider'
+  'pricing-packages', 'latest-guides', 'image-slider',
+  'tabs', 'enquiry-form', 'related-guides'
 ];
 
 const cdata = (s) => '<![CDATA[' + String(s).replace(/\]\]>/g, ']]]]><![CDATA[>') + ']]>';
 const now = new Date().toISOString().slice(0, 19).replace('T', ' ');
 const rfc822 = (d) => new Date(d.replace(' ', 'T') + 'Z').toUTCString();
+
+/* patterns contain two kinds of small PHP address; turn them into the real paths */
+function resolvePhp(body, name) {
+  const out = body
+    .replace(
+      /<\?php\s+echo\s+esc_url\(\s*wp_make_link_relative\(\s*get_theme_file_uri\(\s*'([^']+)'\s*\)\s*\)\s*\);\s*\?>/g,
+      '/wp-content/themes/cdrwa/$1'
+    )
+    .replace(
+      /<\?php\s+echo\s+esc_url\(\s*wp_make_link_relative\(\s*rest_url\(\s*'([^']+)'\s*\)\s*\)\s*\);\s*\?>/g,
+      '/wp-json/$1'
+    );
+  if (/<\?php/.test(out)) console.warn('  [warning] ' + name + ' still contains PHP the showcase script cannot resolve');
+  return out;
+}
 
 const blocks = [];
 for (const name of ORDER) {
@@ -33,11 +49,8 @@ for (const name of ORDER) {
     continue;
   }
   const text = fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, '');
-    const body = text.replace(/^<\?php[\s\S]*?\?>\s*/, '').trim();
-  blocks.push(body.replace(
-    /<\?php\s+echo\s+esc_url\(\s*wp_make_link_relative\(\s*get_theme_file_uri\(\s*'([^']+)'\s*\)\s*\)\s*\);\s*\?>/g,
-    '/wp-content/themes/cdrwa/$1'
-  ));
+  const body = text.replace(/^<\?php[\s\S]*?\?>\s*/, '').trim();
+  blocks.push(resolvePhp(body, name));
 }
 const content = blocks.join('\n\n');
 

@@ -55,3 +55,16 @@ add_action( 'init', function () {
 		array( 'label' => __( 'CDR Writers sections', 'cdrwa' ) )
 	);
 } );
+/* Enquiry form handler (see inc/enquiry.php). */
+require_once get_theme_file_path( 'inc/enquiry.php' );
+
+/* A Query Loop whose post template has the class "cdrwa-related" leaves out the guide being read. */
+add_filter( 'query_loop_block_query_vars', function ( $query, $block ) {
+	$class = ( isset( $block->parsed_block['attrs']['className'] ) ) ? (string) $block->parsed_block['attrs']['className'] : '';
+	if ( false !== strpos( $class, 'cdrwa-related' ) && is_singular( 'post' ) ) {
+		$exclude               = isset( $query['post__not_in'] ) ? (array) $query['post__not_in'] : array();
+		$exclude[]             = get_queried_object_id();
+		$query['post__not_in'] = $exclude;
+	}
+	return $query;
+}, 10, 2 );
