@@ -1,0 +1,25 @@
+<section class="section{{#alt}} section--alt{{/alt}}" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container">
+    <header class="section__head">
+      <h2 class="section__title" id="{{id}}-title">{{heading}}</h2>
+      {{#subheading}}<p class="section__sub">{{subheading}}</p>{{/subheading}}
+    </header>
+    <div class="tabs">
+      {{#items}}
+      <article class="tabs__panel">
+        <h3 class="tabs__title">{{#icon}}{{icon}} {{/icon}}{{title}}</h3>
+        <div class="tabs__body">
+          <p class="tabs__text">{{text}}</p>
+          {{#has_bullets}}
+          <ul class="checklist">
+            {{#bullets}}<li>{{.}}</li>{{/bullets}}
+          </ul>
+          {{/has_bullets}}
+          {{#ctaHref}}<a class="btn btn--accent" href="{{ctaHref}}">{{ctaLabel}}</a>{{/ctaHref}}
+        </div>
+      </article>
+      {{/items}}
+    </div>
+  </div>
+  <script src="/assets/js/sections/tabs.js?v={{buildId}}" defer></script>
+</section>

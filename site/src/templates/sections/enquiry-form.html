@@ -1,0 +1,63 @@
+<section class="section{{#alt}} section--alt{{/alt}}" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container container--narrow">
+    <header class="section__head">
+      <h2 class="section__title" id="{{id}}-title">{{heading}}</h2>
+      {{#subheading}}<p class="section__sub">{{subheading}}</p>{{/subheading}}
+    </header>
+
+    <form class="enquiry" method="post" action="{{endpoint}}" data-endpoint="{{endpoint}}">
+      <div class="enquiry__fields">
+        <div class="enquiry__row">
+          <div class="field">
+            <label for="{{id}}-name">Full name <span class="req" aria-hidden="true">*</span></label>
+            <input id="{{id}}-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="{{id}}-email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input id="{{id}}-email" name="email" type="email" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="enquiry__row">
+          <div class="field">
+            <label for="{{id}}-phone">Phone or WhatsApp</label>
+            <input id="{{id}}-phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="{{id}}-country">Country</label>
+            <input id="{{id}}-country" name="country" type="text" autocomplete="country-name">
+          </div>
+        </div>
+        <div class="field">
+          <label for="{{id}}-topic">I need help with <span class="req" aria-hidden="true">*</span></label>
+          <select id="{{id}}-topic" name="topic" required>
+            <option value="">Choose one</option>
+            {{#topics}}<option>{{.}}</option>{{/topics}}
+          </select>
+        </div>
+        <div class="field">
+          <label for="{{id}}-message">Your message <span class="req" aria-hidden="true">*</span></label>
+          <textarea id="{{id}}-message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="field field--hp" aria-hidden="true">
+          <label for="{{id}}-website">Leave this field empty</label>
+          <input id="{{id}}-website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="check">
+          <input id="{{id}}-consent" name="consent" type="checkbox" required>
+          <label for="{{id}}-consent">I agree to be contacted about my enquiry. See our <a href="/privacy-policy/">Privacy Policy</a>.</label>
+        </div>
+        <button class="btn btn--accent" type="submit">{{submitLabel}}</button>
+      </div>
+
+      <p class="enquiry__status" role="status" aria-live="polite"></p>
+      <p class="enquiry__fallback" hidden>You can also reach us on <a href="{{site.whatsapp.url}}" rel="noopener">WhatsApp</a> or at <a href="mailto:{{site.email}}">{{site.email}}</a>.</p>
+
+      <div class="enquiry__done" tabindex="-1" hidden>
+        <p class="enquiry__done-icon" aria-hidden="true">✅</p>
+        <h3>{{successTitle}}</h3>
+        <p>{{successText}}</p>
+      </div>
+    </form>
+  </div>
+  <script src="/assets/js/sections/enquiry-form.js?v={{buildId}}" defer></script>
+</section>

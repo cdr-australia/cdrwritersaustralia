@@ -1,0 +1,20 @@
+<section class="section{{#alt}} section--alt{{/alt}}" id="{{id}}" aria-labelledby="{{id}}-title">
+  <div class="container container--narrow">
+    <h2 class="related__title" id="{{id}}-title">{{heading}}</h2>
+    <ul class="related">
+      {{#items}}
+      <li>
+        <a class="related__item" href="{{href}}">
+          <span class="related__icon" aria-hidden="true">{{icon}}</span>
+          <span class="related__body">
+            <span class="related__name">{{title}}</span>
+            {{#text}}<span class="related__text">{{text}}</span>{{/text}}
+          </span>
+          {{#read}}<span class="related__meta">⏱️ {{read}}</span>{{/read}}
+          <span class="related__arrow" aria-hidden="true">→</span>
+        </a>
+      </li>
+      {{/items}}
+    </ul>
+  </div>
+</section>
